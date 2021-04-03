@@ -1,0 +1,14 @@
+[ 
+  {name: "25000", code: "AF"}, 
+  {name: "30000 " , code: "AX"}, 
+  {name: "40000 ", code: "AL"}, 
+  {name: "50000 ", code: "DZ"}, 
+  {name: "55000", code: "AS"}, 
+  {name: "60000", code: "AD"}, 
+  {name: "75000", code: "AO"}, 
+  {name: "Chef de Projet", code: "AI"}, 
+  {name: "Graisseure", code: "AQ"}, 
+  {name: "Chargiste", code: "AG"}, 
+  {name: "11 mois", code: "AR"}, 
+  {name: "12 mois", code: "AM"}
+]

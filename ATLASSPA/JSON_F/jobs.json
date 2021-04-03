@@ -1,0 +1,14 @@
+[ 
+  {name: "Architecte", code: "AF"}, 
+  {name: "Ingénieur en génie civil", code: "AX"}, 
+  {name: "Manoeuvre", code: "AL"}, 
+  {name: "Assistant Topographe", code: "DZ"}, 
+  {name: "Chauffeur", code: "AS"}, 
+  {name: "Femme de Ménage", code: "AD"}, 
+  {name: "Topographe", code: "AO"}, 
+  {name: "Chef de Projet", code: "AI"}, 
+  {name: "Graisseure", code: "AQ"}, 
+  {name: "Chargiste", code: "AG"}, 
+  {name: "11 mois", code: "AR"}, 
+  {name: "12 mois", code: "AM"}
+]

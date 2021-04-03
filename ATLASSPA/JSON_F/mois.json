@@ -1,0 +1,14 @@
+[ 
+  {name: "01 mois", code: "AF"}, 
+  {name: "02 mois", code: "AX"}, 
+  {name: "03 mois", code: "AL"}, 
+  {name: "04 mois", code: "DZ"}, 
+  {name: "05 mois", code: "AS"}, 
+  {name: "06 mois", code: "AD"}, 
+  {name: "07 mois", code: "AO"}, 
+  {name: "08 mois", code: "AI"}, 
+  {name: "09 mois", code: "AQ"}, 
+  {name: "10 mois", code: "AG"}, 
+  {name: "11 mois", code: "AR"}, 
+  {name: "12 mois", code: "AM"}
+]

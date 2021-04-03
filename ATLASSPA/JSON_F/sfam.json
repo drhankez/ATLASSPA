@@ -1,0 +1,9 @@
+[ 
+  {name: '3240 LGTS AADL BOULHAF DYR , wilaya de TEBESSA', code: 'AF'}, 
+  {name: '1400 LGTS AAD DOUKAN , wilaya de TEBESSA', code: 'AX'}, 
+  {name: '1200 LGTS AADL SOUK-AHRAS , wilaya de SOUK-AHRAS', code: 'AL'}, 
+  {name: 'Marié', code: 'DZ'}, 
+  {name: 'Mariée', code: 'DZ'}, 
+  {name: 'Célibataire', code: 'DZ'}, 
+  {name: 'Célibatrice', code: 'DZ'}
+]

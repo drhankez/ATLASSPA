@@ -1,0 +1,3287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Textbox Name="Textbox3">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> +</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>SPA Atlas Génie Civil Company</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>21 Rue Des Trois Frères Bouadou –Bir Mourad Rais-</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Contrat De Travail à Durée Déterminée</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.32555cm</Top>
+                <Left>0.34396cm</Left>
+                <Height>1.79599cm</Height>
+                <Width>17.25917cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <Top>0.22578cm</Top>
+            <Left>0.22225cm</Left>
+            <Height>2.4575cm</Height>
+            <Width>18cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox1">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Entre les soussignés :</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>    D’une part,</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> La société par action </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Atlas Génie Civil Company</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> Sise à </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>21 Rue Des Trois Frères Bouadou –Bir Mourad Rais</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>-</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> Représentée par son </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Directeur Général</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>    Et d’autre part,</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!situationn.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!Nom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!prenom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> Né</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!ele.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> le  </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!date_de_naissance.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>à </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!lieu_de_naissance.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> Demeurant à</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>  : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!demeurant.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Il a été convenu ce qui suit :</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>En application des dispositions de  La Loi n° 90-11  du 21 Avril 1990 relative aux  relations de travail article 12</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Modifiée et complétée par l’Ordonnance N° 96-21du 09/07/1996.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>0.28399cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>10.01917cm</Height>
+                <Width>17.66333cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox2">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 01</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Engagement</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> est engagé</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!ele.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> en qualité </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!appo.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!Engagement.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Et ce dans le cadre d’un contrat à durée déterminée de </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!xx_mois.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Et qui prendra effet à partir du </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!entree__.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox2</rd:DefaultName>
+                <Top>10.47955cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>3.66917cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox6">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 02</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Motif du contrat</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> est engagé</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!ele.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> pour une durée déterminé de </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!xx_mois.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>pour un surcroit de travail en application de l’article 12 de La Loi n° 90-11</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Modifiée et complétée par l’Ordonnance n° 96-21du 09/07/1996.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>14.32511cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>3.66507cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>6.96561cm</Top>
+            <Left>0.22225cm</Left>
+            <Height>18.21625cm</Height>
+            <Width>18cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle3">
+            <ReportItems>
+              <Image Name="Image1">
+                <Source>External</Source>
+                <Value>=Parameters!ImagePath.Value</Value>
+                <Sizing>FitProportional</Sizing>
+                <Top>0.127cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>3.7cm</Height>
+                <Width>3.034cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Image>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.85967cm</Top>
+            <Left>0.22225cm</Left>
+            <Height>3.92955cm</Height>
+            <Width>18cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle5">
+            <ReportItems>
+              <Textbox Name="Textbox7">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 03</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Durée du contrat</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Le présent contrat est conclu pour une durée déterminée de </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!xx_mois.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>et ce à partir du </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!entree__.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> , jusqu’au </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!sortie___.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> .</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Date à laquelle il prendra automatiquement fin.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox7</rd:DefaultName>
+                <Top>0.1112cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>4.25125cm</Height>
+                <Width>17.66333cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox8">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 04</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>lieu du travail</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> Effectuera sa fonction au chantier </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!lieu__________de_travail.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox7</rd:DefaultName>
+                <Top>4.49651cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>2.53146cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox9">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 05</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Rémunération</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>La société </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Atlas Génie Civil Company</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> est tenue de payer à </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!Nom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!prenom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>un salaire mensuel Net de </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!salaire.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>DA</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> sera affilié</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!ele.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> au régime de la sécurité sociale applicable dans la société ; avec la déduction  de son salaire de base ; des cotisations dus aux charge salariale.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> Ne peut prétendre à aucune subvention est contenue dans le présent contrat  (frais de panier, frais de transport, etc.).</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                          <Color>#000000</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox9</rd:DefaultName>
+                <Top>7.14438cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>6.52435cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox10">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 06</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Horaire de travail</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> effectuera les horaires en vigueur dans la société, à savoir 40 heures par semaine En application des dispositions de  La Loi de travail.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Avec la possibilité de faire des heures supplémentaires et en fonction de l'état de nécessité aux exigences du travail</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>arial</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 07</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>: </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Congés payés</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> bénéficiera de droits aux congés payés prévus par les articles 39 et 40 de la loi 90-11 relative aux relations de travail et qui sera payés par la </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>(CACOBATPH </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>).</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox10</rd:DefaultName>
+                <Top>13.8169cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>6.5058cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox11">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 08</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Règlement  intérieur</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!pp.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> doit respecter scrupuleusement le règlement  intérieur de la société ainsi que les règles de discipline.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>En cas de  non respect de ce dernier </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!situationn.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!Nom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!prenom.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>soumis aux sanctions déterminées dans le règlement intérieur.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>20.53083cm</Top>
+                <Left>0.16834cm</Left>
+                <Height>4.32153cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>4</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>25.25cm</Top>
+            <Left>0.22225cm</Left>
+            <Height>25cm</Height>
+            <Width>18cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle6">
+            <ReportItems>
+              <Textbox Name="Textbox12">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 09</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>l’abandon de poste</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Toutes absences pendant une période de trois jours consécutifs sans fournir de justificatifs valables seront considérées comme abandon de poste.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article 10</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>fin du contrat</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>1 - </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>le présent contrat prendra fin en date du </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!sortie___.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Segoe UI Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> conformément à l’article </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>02</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>2 - </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>la relation de travail cesse par l’effet des cas citer par l’article </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>66</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> de la loi </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>90-11</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>(la nullité ou l’abrogation légale du contrat de travail ; arrivée à terme du contrat de travail à durée déterminée ; la démission, licenciement ; l’incapacité total de travail, définie par la législation ; licenciement pour compression d’effectifs ; cessation d’activité légale de l’organisme employeur ; la retraite ; décès ;</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>3 - </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>Fin de projet</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>4 - </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>En cas de fautes professionnelles indiquer dans le règlement  intérieur</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>5 - L</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>times New Roman</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>a relation de travail prendra fin en cas de force majeure.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>0.19409cm</Top>
+                <Left>0.31209cm</Left>
+                <Height>9.8081cm</Height>
+                <Width>17.66333cm</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox13">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Article11</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> : </Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>litige</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tout litige pouvant découler dans l’application et/ou l’interprétation du présent contrat par l’une ou l’autre partie des deux parties signataires, sera soumis à un arrangement à l’amiable</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Dans le cas échéant, il sera fait appel au concours de l’Inspection de Travail ayant compétence.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Territoriale.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Dans l’impossibilité d’arrangement, il sera fait appel à la compétence du Tribunal de Bir Mourad Rais.</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>Baskerville Old Face</FontFamily>
+                          <FontSize>14pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <LeftIndent>0cm</LeftIndent>
+                    <RightIndent>0cm</RightIndent>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox11</rd:DefaultName>
+                <Top>10.17858cm</Top>
+                <Left>0.31209cm</Left>
+                <Height>7.10876cm</Height>
+                <Width>17.66333cm</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox14">
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>L’employeur</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox9</rd:DefaultName>
+                <Top>18.02083cm</Top>
+                <Left>1.89959cm</Left>
+                <Height>0.9175cm</Height>
+                <Width>3.47896cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox15">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>L’employé</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Parameters!ele.Value</Value>
+                        <Style>
+                          <FontStyle>Normal</FontStyle>
+                          <FontFamily>segoe ui Black</FontFamily>
+                          <FontSize>12pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                          <TextDecoration>None</TextDecoration>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox9</rd:DefaultName>
+                <Top>18.02083cm</Top>
+                <Left>12.43271cm</Left>
+                <Height>0.9175cm</Height>
+                <Width>3.95521cm</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>50.35583cm</Top>
+            <Left>0.0785cm</Left>
+            <Height>25cm</Height>
+            <Width>18.2875cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>29.69895in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>18.50975cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>1cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.75cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="PageNumber">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                        <FontFamily>Segoe UI Black</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>PageNumber</rd:DefaultName>
+              <Left>5.7405cm</Left>
+              <Height>0.48948cm</Height>
+              <Width>7.3345cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Nom">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="prenom">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="date_de_naissance">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="lieu_de_naissance">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="demeurant">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Engagement">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="xx_mois">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="entree__">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="sortie___">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="lieu__________de_travail">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="salaire">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PDESSAI__">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MMESSAI">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="appo">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ele">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pp">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="situationn">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ImagePath">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>5</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>Nom</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>prenom</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>date_de_naissance</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>lieu_de_naissance</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>demeurant</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Engagement</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>xx_mois</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>entree__</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>sortie___</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>lieu__________de_travail</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>salaire</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>PDESSAI__</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>MMESSAI</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>appo</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>3</RowIndex>
+          <ParameterName>ele</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>pp</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>situationn</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>4</RowIndex>
+          <ParameterName>ImagePath</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="oooo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>31d082a8-abe0-4dd2-a224-6325e17ac549</rd:ReportID>
+</Report>

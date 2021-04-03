@@ -1,0 +1,273 @@
+using Microsoft.Reporting.WinForms;
+using System;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
+
+namespace THE_LAST_ATLAS
+{
+    public partial class Print01 : Form
+    {
+
+
+
+
+
+        public Print01()
+        {
+            InitializeComponent();
+
+        }
+
+        static int checkIfStartsWithVowels(char[] str)
+        {
+
+            if (!(str[0] == 'A' || str[0] == 'a'
+                || str[0] == 'E' || str[0] == 'e'
+                || str[0] == 'I' || str[0] == 'i'
+                || str[0] == 'O' || str[0] == 'o'
+                || str[0] == 'U' || str[0] == 'u'))
+                return 1;
+            else
+                return 0;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            var Form2 = new New_contrat();
+            Form2.Closed += (s, args) => this.Close();
+            Form2.Show();
+        }
+
+        static int checkemployeegeneer(char[] str)
+        {
+
+            if (!(str[0] == 'A' || str[0] == 'a'
+                || str[0] == 'E' || str[0] == 'e'
+                || str[0] == 'I' || str[0] == 'i'
+                || str[0] == 'O' || str[0] == 'o'
+                || str[0] == 'U' || str[0] == 'u'))
+                return 1;
+            else
+                return 0;
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            //name_of_repport = New_contrat.SetValueForText1 + " " + Form2.SetValueForText2;
+            //this.reportViewer1.RefreshReport();
+            //string date_de_naissance = string.Empty;
+            //string name_of_repport = string.Empty;
+            //string date_d_entree = string.Empty;
+            /*string date_de_sortie = string.Empty;
+            string date_de_essai = string.Empty;
+            string period_de_essai = string.Empty;
+            string RAPPORT0PATH = string.Empty;*/
+            string ele = string.Empty;
+            string pp = string.Empty;
+            // string sitt = string.Empty;
+            //string s_test1 = globales.;
+            String code = New_contrat.gendre;
+            label1.Text = code;
+            string date_de_naissance = New_contrat.SetValueForText3 + "/" + New_contrat.SetValueForText11 + "/" + New_contrat.SetValueForText12;
+
+            string name_of_repport = New_contrat.SetValueForText1 + "_" + New_contrat.SetValueForText2 + "_" + New_contrat.SetValueForText6.Replace(" mois", "M") + "_" + New_contrat.SetValueForText13 + "-" + New_contrat.SetValueForText14 + "-" + New_contrat.SetValueForText15;
+
+            string date_d_entree = New_contrat.SetValueForText13 + "/" + New_contrat.SetValueForText14 + "/" + New_contrat.SetValueForText15;
+            string date_de_sortie = New_contrat.SetValueForText18 + "/" + New_contrat.SetValueForText17 + "/" + New_contrat.SetValueForText16;
+            string date_de_essai = New_contrat.SetValueForText20;
+            string period_de_essai = New_contrat.SetValueForText21;
+            string RAPPORT0PATH = New_contrat.SetValueForText22;
+            string sitt = New_contrat.situationn;
+
+
+            //date_de_naissance = New_contrat.SetValueForText3 + "/" + New_contrat.SetValueForText11 + "/" + New_contrat.SetValueForText12;
+
+
+            //
+
+
+            try
+            {
+                byte[] bytes = System.IO.File.ReadAllBytes(New_contrat.SetValueForText19);
+                System.IO.MemoryStream ms = new System.IO.MemoryStream(bytes);
+                pic2.Image = Image.FromStream(ms);
+                //pic2.Image = Image.FromFile(New_contrat.SetValueForText19);
+
+            }
+            catch
+            {
+                //System.Drawing.Bitmap bitmap2 = THE_LAST_ATLAS.Properties.Resources.UploadeImage;
+                System.Drawing.Bitmap bitmap2 = THE_LAST_ATLAS.Properties.Resources.UploadeImage;
+                pic2.Image = bitmap2;
+                bitmap2.Dispose();
+            }
+
+
+
+            //System.Drawing.Bitmap bitmap1 = THE_LAST_ATLAS.Properties.Resources.Image1;
+
+
+            this.reportViewer1.LocalReport.EnableExternalImages = true;
+            //this.reportViewer1.LocalReport.ReportPath = Server.MapPath("~/MemberReport.rdlc");
+            //          this.reportViewer1.LocalReport.ReportPath
+            string exeFolder = Application.StartupPath;
+            String etattcontrat = New_contrat.CONTRAT_TYPE;
+
+            if (etattcontrat.CompareTo("NEW") == 0)
+            {
+                RAPPORT0PATH = "THE_LAST_ATLAS.Reports.Report3.rdlc";
+            }
+            else
+            {
+                RAPPORT0PATH = "THE_LAST_ATLAS.Reports.Report2.rdlc";
+            }
+            string reportPath = Path.Combine(exeFolder, @"Reports\" + RAPPORT0PATH + "");
+            //this.reportViewer1.LocalReport.ReportPath  = reportPath;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = RAPPORT0PATH;
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.LocalReport.EnableExternalImages = true;
+            //this.reportViewer1.LocalReport.ReportEmbeddedResource = "Print01.Report2.rdlc";
+            string Engagement00 = New_contrat.SetValueForText7;
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+            //char firstCharacter = Engagement00.ToLower().ToCharArray().(0);
+            string apoostroph = "";
+            char first_chr = Engagement00[0];
+            //Boolean result = vowels.Contains(firstCharacter);
+            if (checkIfStartsWithVowels(Engagement00.ToLower().ToCharArray()) == 1)
+                apoostroph = "de";
+            else
+                apoostroph = "d'";
+
+            /// FIMININ
+            /// 
+
+            if (label1.Text == "M")
+                ele = "";
+            else
+                ele = "e";
+            if (label1.Text == "M")
+                pp = "Il";
+            else
+                pp = "Elle";
+            //if (sitt == "M")
+            label4.Text = sitt;
+
+            ReportParameter param = new ReportParameter();
+            ReportParameterCollection rdlcpara = new ReportParameterCollection();
+            //this.reportViewer2.RefreshReport();
+            // this.reportViewer1.RefreshReport();
+            rdlcpara.Add(new ReportParameter("Nom", New_contrat.SetValueForText1));
+            rdlcpara.Add(new ReportParameter("prenom", New_contrat.SetValueForText2));
+            //DATE DE NAISSENCE CHCK FORMAT AND VALID AND CONVERT
+            rdlcpara.Add(new ReportParameter("date_de_naissance", date_de_naissance));
+            rdlcpara.Add(new ReportParameter("lieu_de_naissance", New_contrat.SetValueForText5));
+            //Demeurant
+            rdlcpara.Add(new ReportParameter("demeurant", New_contrat.SetValueForText4));
+            //Engagement  
+            rdlcpara.Add(new ReportParameter("Engagement", New_contrat.SetValueForText7));
+            //contrat à durée 
+            rdlcpara.Add(new ReportParameter("xx_mois", New_contrat.SetValueForText6));
+            //à partir du 
+            rdlcpara.Add(new ReportParameter("entree__", date_d_entree));
+            //jusqu'a
+            rdlcpara.Add(new ReportParameter("sortie___", date_de_sortie));
+            //lieu__________de_travail
+            rdlcpara.Add(new ReportParameter("lieu__________de_travail", New_contrat.SetValueForText8));
+            //
+            //salaire
+            rdlcpara.Add(new ReportParameter("salaire", New_contrat.SetValueForText10));
+
+            rdlcpara.Add(new ReportParameter("MMESSAI", period_de_essai));
+            rdlcpara.Add(new ReportParameter("PDESSAI__", date_de_essai));
+            rdlcpara.Add(new ReportParameter("appo", apoostroph));
+            rdlcpara.Add(new ReportParameter("ele", ele));
+            rdlcpara.Add(new ReportParameter("pp", pp));
+            rdlcpara.Add(new ReportParameter("situationn", sitt));
+
+            try
+            {
+                string imagePath = new Uri(New_contrat.SetValueForText19).AbsoluteUri;
+                rdlcpara.Add(new ReportParameter("ImagePath", imagePath));
+            }
+            catch
+            {
+                Bitmap image = new Bitmap(45, 65);
+                var path = Path.GetTempPath();
+                //System.Drawing.Bitmap bitmap1 = THE_LAST_ATLAS.Properties.Resources.Image1;
+                //picImage.Image.Save(path + @"MOD_IMAGE.jpg");
+                image.Save(path + @"testimageing.jpg");
+                //image.Save(@"c:\temp\testimageing.jpg");
+                string imagePath = new Uri(path + "\testimageing.jpg").AbsoluteUri;
+                rdlcpara.Add(new ReportParameter("ImagePath", imagePath));
+                image.Dispose();
+            }
+            this.reportViewer1.LocalReport.SetParameters(rdlcpara);
+            this.reportViewer1.LocalReport.DisplayName = name_of_repport;
+            this.reportViewer1.ZoomMode = ZoomMode.Percent;
+            this.reportViewer1.ZoomPercent = 65;
+            var setup = reportViewer1.GetPageSettings();
+            setup.Margins = new System.Drawing.Printing.Margins(40, 40, 40, 40);
+            this.reportViewer1.SetPageSettings(setup);
+            this.reportViewer1.RefreshReport();
+            displayinfos();
+
+
+        }
+
+        void displayinfos()
+        {
+            string date_de_naissance = New_contrat.SetValueForText3 + "/" + New_contrat.SetValueForText11 + "/" + New_contrat.SetValueForText12;
+            string date_d_entree = New_contrat.SetValueForText13 + "/" + New_contrat.SetValueForText14 + "/" + New_contrat.SetValueForText15;
+            string date_de_sortie = New_contrat.SetValueForText18 + "/" + New_contrat.SetValueForText17 + "/" + New_contrat.SetValueForText16;
+            string sitt = New_contrat.situationn;
+
+            label600.Text = New_contrat.SetValueForText1;
+            label601.Text = New_contrat.SetValueForText2;
+            label602.Text = date_de_naissance;
+            label603.Text = New_contrat.SetValueForText4;
+            label604.Text = New_contrat.SetValueForText5;
+            label605.Text = New_contrat.SetValueForText6;
+            label606.Text = New_contrat.SetValueForText7;
+            label607.Text = New_contrat.SetValueForText8;
+            label608.Text = New_contrat.SetValueForText10 + " DA";
+            label609.Text = date_d_entree;
+            label610.Text = date_de_sortie;
+            label611.Text = sitt;
+
+            label700.Text = New_contrat.CONTRAT_TYPE;
+            label701.Text = New_contrat.CONTRAT_ETAT;
+
+        }
+        private void reportViewer1_ReportExport(object sender, Microsoft.Reporting.WinForms.ReportExportEventArgs e)
+        {
+            e.Cancel = true;
+            string mimeType;
+            string encoding;
+            string fileNameExtension;
+            string[] streams;
+            Microsoft.Reporting.WinForms.Warning[] warnings;
+
+            Microsoft.Reporting.WinForms.Report report;
+            if (reportViewer1.ProcessingMode == Microsoft.Reporting.WinForms.ProcessingMode.Local)
+                report = reportViewer1.LocalReport;
+            else
+                report = reportViewer1.ServerReport;
+
+            var bytes = report.Render(e.Extension.Name, e.DeviceInfo,
+                            Microsoft.Reporting.WinForms.PageCountMode.Actual, out mimeType,
+                            out encoding, out fileNameExtension, out streams, out warnings);
+
+            var path = string.Format(@"d:\file.{0}", fileNameExtension);
+            System.IO.File.WriteAllBytes(path, bytes);
+
+
+            MessageBox.Show(string.Format("Exported to {0}", path));
+        }
+
+
+    }
+}
