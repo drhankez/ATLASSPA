@@ -68,8 +68,8 @@ namespace ATLASSPA
 
 
 
-            NOTIFICATI0N ntf = new NOTIFICATI0N();
-            ntf.showAlert("hi", NOTIFICATI0N.enmType.Success);
+            //NOTIFICATI0N ntf = new NOTIFICATI0N();
+            //ntf.showAlert("hi", NOTIFICATI0N.enmType.Success);
             //Save_notification();
         }
     }

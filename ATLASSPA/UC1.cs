@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Newtonsoft.Json.Linq;
-using System.Drawing.Imaging;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ATLASSPA
 {
@@ -21,7 +14,7 @@ namespace ATLASSPA
             InitializeComponent();
         }
         //private parentinstance;
-        public static String[] nnam = { "ADEL","YACINE", "AHMED", "OZAN", "FAYCEL", "SAMI", "ZOBIR", "AYMEN", "RAMI", "MORAT", "REDVAN", "BURAK", "REDHA", "KOLIBALI" };
+        public static String[] nnam = { "ADEL", "YACINE", "AHMED", "OZAN", "FAYCEL", "SAMI", "ZOBIR", "AYMEN", "RAMI", "MORAT", "REDVAN", "BURAK", "REDHA", "KOLIBALI" };
         public static String[] ppnam = { "HASNAOUI", "CHAYBI", "ZARKAN", "AIT AOUDIA", "SAHRAOUI", "BENABDALLAG", "BOUALEGGE", "BOUGDIRI", "TALBI", "FARHATI", "SALEM", "SEBIA", "AYMEN", "MOZAKA" };
         public static String[] eengag = { "JOB1", "ARCHI", "CHAUFEAUR", "FEMME DE MENAGE", "FERRALLIEUR", "CHAUFFEUR", "MAçON", "MANOEUVRE", "CHEF DE PROJET", "INGINIEUR EN GENIE CIVIL" };
         public static String[] ddureee = { "QUANZE JOUR", "01 Mois", "09 Mois", "06 Mois", "02 Mois", "05 Mois", "07 Mois" };
@@ -42,7 +35,7 @@ namespace ATLASSPA
             Loadsalaire();
             Loadmois();
             Loadstuation();
-            bunifuCustomLabel21.Text="no_image";
+            bunifuCustomLabel21.Text = "no_image";
             //Save_Class.Instance.SC_CONTRAT_TYPE_employer = "sc";
 
 
@@ -346,14 +339,14 @@ namespace ATLASSPA
                 bunifuTextBox180.Visible = false;
                 bunifuTextBox190.Visible = false;
                 bunifuTextBox200.Visible = false;
-                bunifuTextBox210.Visible = false;                
+                bunifuTextBox210.Visible = false;
             }
         }
 
         private void BunifuToggleSwitch1_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
         {
             check_toggle();
-          
+
         }
 
         private void BunifuTextBox21_KeyUp(object sender, KeyEventArgs e)
@@ -422,7 +415,7 @@ namespace ATLASSPA
 
         private void BunifuToggleSwitch1_Validated(object sender, EventArgs e)
         {
-           
+
         }
         public void LoadCountries()
         //public void LoadCountries(string jname)
@@ -492,7 +485,7 @@ namespace ATLASSPA
         void Loadstuation()
         {
             AutoCompleteStringCollection les_mois = new AutoCompleteStringCollection();
-            JArray ja = JArray.Parse(System.IO.File.ReadAllText("JSON_F\\"+"sfam.json"));
+            JArray ja = JArray.Parse(System.IO.File.ReadAllText("JSON_F\\" + "sfam.json"));
             foreach (JObject mois in ja)
             {
                 les_mois.Add(mois["name"].ToString());
@@ -500,7 +493,7 @@ namespace ATLASSPA
             bunifuTextBox27.AutoCompleteCustomSource = les_mois;
             bunifuTextBox27.PlaceholderText = "Situation Familiale ";
         }
-        public void fnc_random_fill ()
+        public void fnc_random_fill()
         {
             Random RND = new Random();
             int RANBO = RND.Next(nnam.Length);
@@ -558,35 +551,35 @@ namespace ATLASSPA
 
             //cur_emply_obj.O_NOM_employer = bunifuTextBox1.Text.ToUpper() ;
             //bunifuCustomLabel23.Text = cur_emply_obj.O_NOM_employer;
-           // Save_Class.Instance.SC_NOM_employer = bunifuTextBox1.Text.ToUpper();
-            Save_Class.Instance.SC_NOM_employer          = bunifuTextBox1.Text.ToUpper();
-            Save_Class.Instance.SC_PNOM_employer         = bunifuTextBox2.Text.ToUpper();
-            Save_Class.Instance.SC_DATE_N_employer       = bunifuTextBox3.Text+"/"+ bunifuTextBox4.Text + "/" + bunifuTextBox5.Text;
-            Save_Class.Instance.SC_LIEU_N_employer       = bunifuTextBox6.Text.ToUpper();
-            Save_Class.Instance.SC_DEMEURANT_employer    = bunifuTextBox7.Text.ToUpper();
-            Save_Class.Instance.SC_ENGAGEMENT_employer   = bunifuTextBox8.Text.ToUpper();
-            Save_Class.Instance.SC_DUREE_employer        = bunifuTextBox9.Text.ToUpper();
-            Save_Class.Instance.SC_ENTREE_employer       = bunifuTextBox10.Text + "/" + bunifuTextBox11.Text + "/" + bunifuTextBox12.Text;
+            // Save_Class.Instance.SC_NOM_employer = bunifuTextBox1.Text.ToUpper();
+            Save_Class.Instance.SC_NOM_employer = bunifuTextBox1.Text.ToUpper();
+            Save_Class.Instance.SC_PNOM_employer = bunifuTextBox2.Text.ToUpper();
+            Save_Class.Instance.SC_DATE_N_employer = bunifuTextBox3.Text + "/" + bunifuTextBox4.Text + "/" + bunifuTextBox5.Text;
+            Save_Class.Instance.SC_LIEU_N_employer = bunifuTextBox6.Text.ToUpper();
+            Save_Class.Instance.SC_DEMEURANT_employer = bunifuTextBox7.Text.ToUpper();
+            Save_Class.Instance.SC_ENGAGEMENT_employer = bunifuTextBox8.Text.ToUpper();
+            Save_Class.Instance.SC_DUREE_employer = bunifuTextBox9.Text.ToUpper();
+            Save_Class.Instance.SC_ENTREE_employer = bunifuTextBox10.Text + "/" + bunifuTextBox11.Text + "/" + bunifuTextBox12.Text;
 
-            Save_Class.Instance.SC_SORTIE_employer       = bunifuTextBox13.Text + "/" + bunifuTextBox14.Text + "/" + bunifuTextBox15.Text;
-            Save_Class.Instance.SC_CHANTIER_employer     = bunifuTextBox16.Text.ToUpper();
-            Save_Class.Instance.SC_SALAIRE_employer      = bunifuTextBox17.Text;
-            Save_Class.Instance.SC_NMR_ASSU_employer     = bunifuTextBox21.Text.ToUpper();
-            Save_Class.Instance.SC_SITUATION_F_employer  = Chek_single(bunifuTextBox27.Text);
-            Save_Class.Instance.SC_NBR_ENF_employer      = bunifuTextBox28.Text.ToUpper();
-            Save_Class.Instance.SC_NMR_ADH_employer      = "";// bunifuTextBox9.Text.ToUpper();
-            Save_Class.Instance.SC_GR_S_employer         = bunifuTextBox20.Text;
+            Save_Class.Instance.SC_SORTIE_employer = bunifuTextBox13.Text + "/" + bunifuTextBox14.Text + "/" + bunifuTextBox15.Text;
+            Save_Class.Instance.SC_CHANTIER_employer = bunifuTextBox16.Text.ToUpper();
+            Save_Class.Instance.SC_SALAIRE_employer = bunifuTextBox17.Text;
+            Save_Class.Instance.SC_NMR_ASSU_employer = bunifuTextBox21.Text.ToUpper();
+            Save_Class.Instance.SC_SITUATION_F_employer = Chek_single(bunifuTextBox27.Text);
+            Save_Class.Instance.SC_NBR_ENF_employer = bunifuTextBox28.Text.ToUpper();
+            Save_Class.Instance.SC_NMR_ADH_employer = "";// bunifuTextBox9.Text.ToUpper();
+            Save_Class.Instance.SC_GR_S_employer = bunifuTextBox20.Text;
 
-            Save_Class.Instance.SC_TELEPH_employer       = bunifuTextBox18.Text;
-            Save_Class.Instance.SC_EMAIL__employer       = bunifuTextBox19.Text.ToUpper();
-            Save_Class.Instance.SC_SINF__employer        = bunifuTextBox17.Text;
-            Save_Class.Instance.SC_ETAT_CONTR_employer   = bunifuTextBox21.Text.ToUpper();
+            Save_Class.Instance.SC_TELEPH_employer = bunifuTextBox18.Text;
+            Save_Class.Instance.SC_EMAIL__employer = bunifuTextBox19.Text.ToUpper();
+            Save_Class.Instance.SC_SINF__employer = bunifuTextBox17.Text;
+            Save_Class.Instance.SC_ETAT_CONTR_employer = bunifuTextBox21.Text.ToUpper();
             Save_Class.Instance.SC_CONTRAT_TYPE_employer = var_type_contrat.ToUpper();
-            Save_Class.Instance.SC_DATE_REAL_employer    = bunifuTextBox28.Text.ToUpper();
-            Save_Class.Instance.SC_IMG_employer          = empty_image(var_employe_image_path);
-            Save_Class.Instance.SC_GENDER_employer       = var_employe_gendre;
-            
-            
+            Save_Class.Instance.SC_DATE_REAL_employer = bunifuTextBox28.Text.ToUpper();
+            Save_Class.Instance.SC_IMG_employer = empty_image(var_employe_image_path);
+            Save_Class.Instance.SC_GENDER_employer = var_employe_gendre;
+
+
 
 
 
@@ -594,10 +587,10 @@ namespace ATLASSPA
 
 
         }
-        public void  fnc_show_syn_panel()
+        public void fnc_show_syn_panel()
         {
             bunifuTransition10.HideSync(Add_Employer.Instance.PnlContainer);
-            
+
             if (!Add_Employer.Instance.PnlContainer.Controls.ContainsKey("UC2"))
             {
 
@@ -609,7 +602,7 @@ namespace ATLASSPA
                 Add_Employer.Instance.PnlContainer.Controls.Add(un3);
                 bunifuTransition387.HideSync(Add_Employer.Instance.pnlNOTIFICATOIN);
                 bunifuTransition10.ShowSync(Add_Employer.Instance.PnlContainer);
-                
+
             }
         }
         private void BunifuButton2_Click(object sender, EventArgs e)
@@ -618,14 +611,14 @@ namespace ATLASSPA
             // NOTIFICATI0N ntf = new NOTIFICATI0N();
 
             //ntf.showAlert("hi", NOTIFICATI0N.enmType.Success) ;
-            
 
 
+            //fnc_random_fill();
             Stopwatch sw;
             sw = Stopwatch.StartNew();
             check_data_valid_raw();
-            bunifuCustomLabel23.Text = bunifuCustomLabel23.Text+" time = "+sw.ElapsedMilliseconds;
-            
+            bunifuCustomLabel23.Text = bunifuCustomLabel23.Text + " time = " + sw.ElapsedMilliseconds;
+
 
             sw = Stopwatch.StartNew();
             collectted_data_ui();
@@ -633,7 +626,7 @@ namespace ATLASSPA
             //NOTIFICATI0N ntf = new NOTIFICATI0N();
             //ntf.showAlert("hi", NOTIFICATI0N.enmType.Success);
             bunifuCustomLabel23.Text = bunifuCustomLabel23.Text + " time = " + sw.ElapsedMilliseconds;
-            fnc_show_syn_panel();
+            //fnc_show_syn_panel();
 
 
 
@@ -642,7 +635,7 @@ namespace ATLASSPA
         }
         static string Chek_single(string situationf)
         {
-            string st =  null ;
+            string st = null;
             string fucccc = situationf.ToUpper();
             if (fucccc.StartsWith("M"))
             {
@@ -674,15 +667,15 @@ namespace ATLASSPA
         }
         private void Save_notification()
         {
-            pnlnot un4 = new pnlnot();
-            un4.Dock = DockStyle.Fill;
-            Add_Employer.Instance.pnlNOTIFICATOIN.Controls.Clear();
-            Add_Employer.Instance.pnlNOTIFICATOIN.Controls.Add(un4);
+            //§§§§§§§pnlnot un4 = new pnlnot();
+            //§§§§§§un4.Dock = DockStyle.Fill;
+            //§§§§§§Add_Employer.Instance.pnlNOTIFICATOIN.Controls.Clear();
+            //§§§§§§Add_Employer.Instance.pnlNOTIFICATOIN.Controls.Add(un4);
             //Add_Employer.
             CLS_MICROSOFT cls_micro = new CLS_MICROSOFT();
             cls_micro.Access_save();
-            bunifuTransition387.ShowSync(Add_Employer.Instance.pnlNOTIFICATOIN);
-            
+            //ààbunifuTransition387.ShowSync(Add_Employer.Instance.pnlNOTIFICATOIN);
+
         }
         private void BunifuButton4_Click(object sender, EventArgs e)
         {
@@ -691,10 +684,56 @@ namespace ATLASSPA
             //CLS_MICROSOFT.
             CLS_MICROSOFT cls_micro = new CLS_MICROSOFT();
             cls_micro.Access_save();
-          
+
 
         }
-        
+        public void faker_gen()
+        {
+            Random RND = new Random();
+            int RANBO = RND.Next(nnam.Length);
+            int RANBO1 = RND.Next(ppnam.Length);
+            int RANBO2 = RND.Next(eengag.Length);
+            int RANBO3 = RND.Next(ddureee.Length);
+            int RANBO4 = RND.Next(situ_arr.Length);
 
+            bunifuTextBox1.Text = Faker.NameFaker.FirstName();
+            bunifuTextBox2.Text = Faker.NameFaker.LastName();
+            bunifuTextBox3.Text = RND.Next(1, 31).ToString();
+            bunifuTextBox4.Text = RND.Next(1, 12).ToString();
+            bunifuTextBox5.Text = RND.Next(1960, 1992).ToString();
+            //bunifuTextBox6.Text = "1333";
+            bunifuTextBox6.Text = "TEBESSA";
+            bunifuTextBox7.Text = "TEBESSA";
+            bunifuTextBox8.Text = eengag[RANBO2];
+            bunifuTextBox9.Text = ddureee[RANBO3];
+            bunifuTextBox10.Text = RND.Next(1, 31).ToString();
+            bunifuTextBox11.Text = RND.Next(1, 12).ToString();
+            bunifuTextBox12.Text = RND.Next(2020, 2021).ToString();
+            bunifuTextBox13.Text = RND.Next(1, 31).ToString();
+            bunifuTextBox14.Text = "12";
+            bunifuTextBox15.Text = "2021";
+            bunifuTextBox16.Text = "3240 LGTS AADL BOULHAF DYR ,Wilaya de TEBESSA";
+            bunifuTextBox17.Text = RND.Next(1, 99).ToString()+"000";
+            //bunifuTextBox16.Text = "1999";
+            bunifuTextBox18.Text = Faker.PhoneFaker.Phone();
+            bunifuTextBox19.Text = nnam[RANBO] + ppnam[RANBO] + "@GMAIL.COM";
+            bunifuTextBox20.Text = "O-";
+            bunifuTextBox21.Text = RND.Next(100000, 999999).ToString() + RND.Next(100000, 999999).ToString();
+            bunifuTextBox25.Text = RND.Next(1, 99).ToString(); 
+            bunifuTextBox27.Text = situ_arr[RANBO4];// "Célibataire";
+            bunifuTextBox28.Text = RND.Next(1, 12).ToString();
+
+        }
+        private void BunifuButton5_Click(object sender, EventArgs e)
+        { 
+            for (int i = 0;i < 100; i++)
+            {
+                faker_gen();
+                collectted_data_ui();
+                Save_notification();
+
+            }
+            
+        }
     }
 }
