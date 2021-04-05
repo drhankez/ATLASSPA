@@ -5,6 +5,8 @@ using System.Data.OleDb;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -22,7 +24,6 @@ namespace ATLASSPA
         public DataSet dataset = new DataSet();
         public DataTable datatbl = new DataTable();
         public DataTable dds = new DataTable();
-        public int scrollPosition = 0;
         public frm_SEARCH()
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace ATLASSPA
         public void local_fii_data()
         {
             {
-                //pictureBox2.Visible = true;
+                pictureBox2.Visible = true;
                 //bunifuDataGridView1.Rows.Clear();
                 //da = new OleDbDataAdapter();
                 //cmd = new OleDbCommand();
@@ -161,7 +162,53 @@ namespace ATLASSPA
                 formbk.Dispose();
             }
         }
+        /*public void stylelistview()
+        {
+            materialListView1.View = View.Details;
+            materialListView1.FullRowSelect = true;
+            //materialListView1.View = View.Details;
+            //materialListView1.FullRowSelect = true;
 
+            //ADD COLUMNS
+            materialListView1.Columns.Add("ID", 45);
+            materialListView1.Columns.Add("Nom", 120);
+            materialListView1.Columns.Add("Pénom", 120);
+            materialListView1.Columns.Add("Date De Naissance", 100);
+            materialListView1.Columns.Add("Lieu De Naissance", 110);
+            materialListView1.Columns.Add("DUMERANT DE", 100);
+            materialListView1.Columns.Add("FONCTION", 130);
+            materialListView1.Columns.Add("DURÉE", 50);
+            materialListView1.Columns.Add("DATE D'EMBAUCHE", 140);
+            materialListView1.Columns.Add("FIN DU CONTRAT", 140);
+            materialListView1.Columns.Add("CHANTIER", 350);
+            materialListView1.Columns.Add("SALAIRE", 60);
+            materialListView1.Columns.Add("NUMERO ASSURANCE SOCIAL", 190);
+            materialListView1.Columns.Add("SITUATION FAMILIALE", 140);
+            materialListView1.Columns.Add("NOMBRE D'ENFANT", 120);
+            materialListView1.Columns.Add("GROUPAGE", 80);
+            materialListView1.Columns.Add("ETTE", 80);
+            materialListView1.Columns.Add("TELEPHONE", 110);
+            materialListView1.Columns.Add("EMAIL", 80);
+            materialListView1.Columns.Add("img", 80);
+            //listView1.AutoResizeColumn(8, ColumnHeaderAutoResizeStyle.HeaderSize);
+
+            //listView1.AutoResizeColumn(9, ColumnHeaderAutoResizeStyle.ColumnContent);
+
+            //listView1.AutoResizeColumn(8, Col.HeaderSize);
+            /*  listView2.View = View.Details;
+              listView2.FullRowSelect = true;
+
+              //ADD COLUMNS
+              listView2.Columns.Add("ID", 50);
+              listView2.Columns.Add("Nom", 150);
+              listView2.Columns.Add("Pénom", 150);
+              listView2.Columns.Add("Date De Naissance", 150);
+              listView2.Columns.Add("N De La Sécurité Sociale", 150);
+              listView2.Columns.Add("FONCTION", 150);
+              listView2.Columns.Add("SITUATION FAMILIALe", 150);
+              listView2.Columns.Add("NUMBRE D'ENFANT", 150);
+              listView2.Columns.Add("DATE D'EMBAUCHE", 150);
+        }*/
         private void populate1(string I, string N, string P, string LN, string DM, string EG, string DRE, string EMB, string SRT, string CHNT, string SALR, string NASS, string SITF, string NMBRE, string NADH, string GPRH, string TELEPHONE, string EMAIL, string ETTE, string immg)
         {
             //ROW
@@ -172,8 +219,37 @@ namespace ATLASSPA
         }
 
 
+        private void BunifuTextBox1_TextChange(object sender, EventArgs e)
+        {
+
+        }
+        public void sggg()
+        {
+            con.Open();
+            try
+            {
+                cmd = new OleDbCommand();
+                dt = new DataTable();
+                ds = new DataSet();
+
+                cmd.Connection = con;
+                cmd.CommandText = "Select * FROM T_1 WHERE NOM LIKE '%" + "" + "%'";//bunifuTextBox9.Text.ToString() + "%'";
+                da = new OleDbDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(datatbl);
+                da.Fill(ds);
+                bunifuDataGridView1.DataSource = ds.Tables[0];
+                bunifuDataGridView1.ClearSelection();
 
 
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+        }
         private void search_method()
         {
             bunifuDataGridView1.Rows.Clear();
@@ -224,7 +300,58 @@ namespace ATLASSPA
                     //imgLogoCompany.Src = String.Format("data:image/Bmp;base64,{0}\"", imgString);
                     populate1(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString().Split('@').Last(), row[7].ToString().Split('@').Last(), row[8].ToString().Split('@').Last(), row[9].ToString().Split('@').Last(), row[10].ToString().Split('@').Last(), row[11].ToString().Split('@').Last(), row[12].ToString(), row[13].ToString(), row[14].ToString(), row[15].ToString(), row[16].ToString(), row[17].ToString(), row[18].ToString(), row[18].ToString());
                 }
+                //da.Dispose();
+                //dt.Dispose();
+                /*foreach (DataRow row in dt.Rows)
+{
+    int column = 0;
+    bunifuDataGridView1.Rows.Add();
+    //int ya = row.ItemArray.Length;
 
+    foreach (var dc in row.ItemArray)
+    {
+        //MessageBox.Show(ya.ToString());
+        if (dc.ToString().IndexOf('@') != -1)
+        {
+            string coper = dc.ToString().Split('@').Last();
+            bunifuDataGridView1.Rows[rowcount].Cells[column].Value = coper;
+        }
+        else
+        {
+            bunifuDataGridView1.Rows[rowcount].Cells[column].Value = dc;
+        }
+
+
+        column++;
+    }
+    rowcount++;
+} 
+}*/
+
+                /*int rowcount = 0;
+                foreach (DataRow row in dt.Rows)
+                {
+                    int column = 0;
+                    bunifuDataGridView1.Rows.Add();
+                    //int ya = row.ItemArray.Length;
+
+                    foreach (var dc in row.ItemArray)
+                    {
+                        //MessageBox.Show(ya.ToString());
+                       try
+                        {
+                            bunifuDataGridView1.Rows[rowcount].Cells[column].Value = dc.ToString().Split('@').Last();
+                        }
+                        catch
+                        {
+                            bunifuDataGridView1.Rows[rowcount].Cells[column].Value = dc;
+                        }
+                        
+
+                        column++;
+                    }
+                    rowcount++;
+                }*/
             }
             catch (Exception ex)
             {
@@ -308,88 +435,86 @@ namespace ATLASSPA
             bunifuDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             con.Close();
         }
-        private void BINDGRID()
+        private void  BINDGRID()
         {
             //pictureBox2.Visible = true;
-            try
+
+            bunifuDataGridView1.Rows.Clear();
+            da = new OleDbDataAdapter();
+            //cmd = new OleDbCommand();
+            DataTable dt = new DataTable();
+            ds = new DataSet();
+            //using ()
+            using (OleDbConnection con = new OleDbConnection(conString))
             {
-                bunifuDataGridView1.Rows.Clear();
-                bunifuVScrollBar1.Value = 0;
-                da = new OleDbDataAdapter();
-                //cmd = new OleDbCommand();
-                DataTable dt = new DataTable();
-                ds = new DataSet();
-                //using ()
-                using (OleDbConnection con = new OleDbConnection(conString))
+                using (OleDbCommand cmd = new OleDbCommand("Select * FROM T_1 WHERE NOM LIKE '%" + bunifuTextBox1.Text.Trim() + "%'", con))
                 {
-                    using (OleDbCommand cmd = new OleDbCommand("Select * FROM T_1 WHERE NOM LIKE '%" + bunifuTextBox1.Text.Trim() + "%'", con))
+                    cmd.CommandType = CommandType.Text;
+                    using (OleDbDataAdapter sda = new OleDbDataAdapter(cmd))
                     {
-                        cmd.CommandType = CommandType.Text;
-                        using (OleDbDataAdapter sda = new OleDbDataAdapter(cmd))
+                        using (DataTable dds = new DataTable())
                         {
-                            using (DataTable dds = new DataTable())
+                            sda.Fill(dds);
+                            bunifuDataGridView1.ClearSelection();
+                            // sda.Fill(this.dds."T_1");
+                            int search_count = dds.Rows.Count;
+                            label4.Text = search_count.ToString();
+
+                            //bunifuVScrollBar1.Maximum = bunifuDataGridView1.RowCount;
+                            /*if (search_count > 8)
                             {
-                                sda.Fill(dds);
-                                bunifuDataGridView1.ClearSelection();
-                                // sda.Fill(this.dds."T_1");
-                                int search_count = dds.Rows.Count;
-                                label4.Text = search_count.ToString();
-
-                                //bunifuVScrollBar1.Maximum = bunifuDataGridView1.RowCount;
-                                /*if (search_count > 8)
-                                {
-                                    bunifuVScrollBar1.Maximum = search_count;
-                                }
-                                else
-                                {
-                                    bunifuVScrollBar1.Maximum = 8;
-                                }*/
-                                //bunifuVScrollBar1.Maximum = search_count;
-                                //vScrollBar1.Maximum = search_count;
-                                //vScrollBar1.Minimum = 1;
-                                //metroScrollBMINar1.Maximum = search_count+1;
-                                //bunifuDataGridView1.Update();
-                                foreach (DataRow row in dds.Rows)
-                                {
-                                    //byte[] imgBytes = (byte[])row[23];
-                                    //TypeConverter tc = TypeDescriptor.GetConverter(typeof(Bitmap));
-                                    //Bitmap MyBitmap = (Bitmap)tc.ConvertFrom(imgBytes);
-                                    //string imgString = Convert.ToBase64String(imgBytes);
-                                    //imgLogoCompany.Src = String.Format("data:image/Bmp;base64,{0}\"", imgString);
-                                    populate1(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString().Split('@').Last(), row[7].ToString().Split('@').Last(), row[8].ToString().Split('@').Last(), row[9].ToString().Split('@').Last(), row[10].ToString().Split('@').Last(), row[11].ToString().Split('@').Last(), row[12].ToString(), row[13].ToString(), row[14].ToString(), row[15].ToString(), row[16].ToString(), row[17].ToString(), row[18].ToString(), row[18].ToString());
-                                }
-                                dds.Dispose();
-                                sda.Dispose();
-                                
-
-
-
-
+                                bunifuVScrollBar1.Maximum = search_count;
                             }
+                            else
+                            {
+                                bunifuVScrollBar1.Maximum = 8;
+                            }*/
+                            //bunifuVScrollBar1.Maximum = search_count;
+                            vScrollBar1.Maximum = search_count;
+                            //vScrollBar1.Minimum = 1;
+                            //metroScrollBMINar1.Maximum = search_count+1;
+                            //bunifuDataGridView1.Update();
+                            foreach (DataRow row in dds.Rows)
+                            {
+                                //byte[] imgBytes = (byte[])row[23];
+                                //TypeConverter tc = TypeDescriptor.GetConverter(typeof(Bitmap));
+                                //Bitmap MyBitmap = (Bitmap)tc.ConvertFrom(imgBytes);
+                                //string imgString = Convert.ToBase64String(imgBytes);
+                                //imgLogoCompany.Src = String.Format("data:image/Bmp;base64,{0}\"", imgString);
+                                populate1(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString().Split('@').Last(), row[7].ToString().Split('@').Last(), row[8].ToString().Split('@').Last(), row[9].ToString().Split('@').Last(), row[10].ToString().Split('@').Last(), row[11].ToString().Split('@').Last(), row[12].ToString(), row[13].ToString(), row[14].ToString(), row[15].ToString(), row[16].ToString(), row[17].ToString(), row[18].ToString(), row[18].ToString());
+                            }
+                            dds.Dispose();
+                            sda.Dispose();
+                            
+                            bunifuVScrollBar1.Maximum = bunifuDataGridView1.RowCount-8;
+                            bunifuVScrollBar1.Minimum = 0;
+                            bunifuVScrollBar1.PerformLayout();
+                            
                         }
-
                     }
-                    //pictureBox2.Visible = false;
-                    //Thread.Sleep(5000);
 
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                pictureBox2.Visible = false;
+                //Thread.Sleep(5000);
 
-
+            }
+            //throw new NotImplementedException();
 
         }
 
         private void BunifuButton3_Click(object sender, EventArgs e)
         {
-
+            Stopwatch sw;
+            sw = Stopwatch.StartNew();
+            bunifuDataGridView1.ClearSelection();
+            bunifuDataGridView1.Rows.Clear();
+            bunifuDataGridView1.Refresh();
+            search_method();
+            label3.Text = label3.Text + " time = " + sw.ElapsedMilliseconds;
 
         }
 
-        private void BunifuTextBox1_KeyDownAsync(object sender, KeyEventArgs e)
+        private  void BunifuTextBox1_KeyDownAsync(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -397,30 +522,14 @@ namespace ATLASSPA
                 bunifuDataGridView1.Refresh();
                 Stopwatch sw;
                 sw = Stopwatch.StartNew();
-
+                
                 //await  BINDGRID();
-
+               
                 BINDGRID();
                 materialLabel1.Text = materialLabel1.Text + " time = " + sw.ElapsedMilliseconds;
-
-                //bunifuVScrollBar1.LargeChange = bunifuDataGridView1.DisplayedRowCount(true);
-                //vScrollBar1.SmallChange = 1;
-                try
-                {
-                    bunifuVScrollBar1.PerformLayout();
-                    bunifuVScrollBar1.Maximum = bunifuDataGridView1.RowCount - 8;
-                    //bunifuVScrollBar1.Minimum = 0;
-                    bunifuDataGridView1.FirstDisplayedScrollingRowIndex = scrollPosition;
-
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message + "hi");
-                    //bunifuVScrollBar1.PerformLayout();
-                    bunifuVScrollBar1.Value=1;
-                }
+                
+                bunifuVScrollBar1.LargeChange = bunifuDataGridView1.DisplayedRowCount(true);
+                vScrollBar1.SmallChange = 1;
             }
         }
 
@@ -430,31 +539,34 @@ namespace ATLASSPA
         {
             bunifuDataGridView1.FirstDisplayedScrollingRowIndex = e.Value;
         }
-
+        private int scrollPosition = 0;
 
         private void BunifuDataGridView1_Scroll(object sender, ScrollEventArgs e)
         {
 
             // While scrolling, keep track of the scroll position
-            if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
+            /*if (e.ScrollOrientation == ScrollOrientation.HorizontalScroll)
             {
                 this.scrollPosition = e.NewValue;
-            }
+            }*/
             if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
             {
-
+                
                 vScrollBar1.Value = e.NewValue;
                 bunifuVScrollBar1.Value = vScrollBar1.Value;
-
+                //bunifuVScrollBar1.VerticalScroll.Value = e.NewValue;
+                //metroScrollBar1.Value = e.NewValue;
 
             }
+            ///hScrollBar1.Value = e.NewValue;
 
 
         }
 
         private void BunifuDataGridView1_Resize(object sender, EventArgs e)
         {
-
+            //bunifuDataGridView1.HorizontalScrollingOffset = this.scrollPosition;
+            //hScrollBar1.Maximum = bunifuDataGridView1.RowCount;
 
         }
 
@@ -465,19 +577,25 @@ namespace ATLASSPA
 
         private void BunifuButton1_Click_1(object sender, EventArgs e)
         {
-
+            foreach (Control ctrl in bunifuDataGridView1.Controls)
+                if (ctrl.GetType() == typeof(VScrollBar))
+                    ctrl.Width = 100;
         }
+        private ScrollBars gridScrollBars;
+        private void HideScrollBars()
+        {
+            gridScrollBars = bunifuDataGridView1.ScrollBars;
+            bunifuDataGridView1.ScrollBars = ScrollBars.None;
 
-
+//metroScrollBar1.BindingContext = gridScrollBars;
+        }
 
         public void BunifuVScrollBar1_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
         {
             try
             {
-                bunifuDataGridView1.FirstDisplayedScrollingRowIndex = e.Value;//
+                bunifuDataGridView1.FirstDisplayedScrollingRowIndex = e.Value;
                 label7.Text = e.Value.ToString();
-                label6.Text = scrollPosition.ToString();
-
             }
             catch
             {
@@ -502,6 +620,7 @@ namespace ATLASSPA
         private void VScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             bunifuDataGridView1.FirstDisplayedScrollingRowIndex = e.NewValue;
+            label6.Text = e.NewValue.ToString();
         }
     }
 }

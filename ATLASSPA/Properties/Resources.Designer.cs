@@ -263,6 +263,16 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loading_9 {
+            get {
+                object obj = ResourceManager.GetObject("loading-9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stunning_animated_gifs_01 {
             get {
                 object obj = ResourceManager.GetObject("stunning_animated_gifs_01", resourceCulture);
