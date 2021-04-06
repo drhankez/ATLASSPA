@@ -23,20 +23,29 @@ namespace ATLASSPA
         public DataTable datatbl = new DataTable();
         public DataTable dds = new DataTable();
         public int scrollPosition = 0;
+        // bunif
         public frm_SEARCH()
         {
             InitializeComponent();
             //this.bunifuDataGridView1.ScrollBars = ScrollBars.None;
             this.bunifuDataGridView1.MouseWheel += new MouseEventHandler(mousewheel);
-            pictureBox2.Visible = false;
+            //this.bunifuDataGridView1.VerticalScrollingOffset += new MouseEventHandler(mousewheejl);
+            // bunifuVScrollBar1.ValueChanged += new EventHandler(vbar_OnValueChanged);
+
+            //pictureBox2.Visible = false;
             //vScrollBar1.Minimum = 0;
+
 
 
             //local_fii_data();
 
         }
 
-
+        //VScrollBar 
+       /* private void vbar_OnValueChanged(object sender, EventArgs e)
+        {
+            pb.Location = new Point(pb.Left, (pnl.Size.Height - img.Size.Height) * vbar.Value / (vbar.Maximum - vbar.LargeChange + 1));
+        }*/
         private void mousewheel(object sender, MouseEventArgs e)
         {
             if (e.Delta > 0 && bunifuDataGridView1.FirstDisplayedScrollingRowIndex > 0)
@@ -311,10 +320,12 @@ namespace ATLASSPA
         private void BINDGRID()
         {
             //pictureBox2.Visible = true;
+
             try
             {
+                
                 bunifuDataGridView1.Rows.Clear();
-                bunifuVScrollBar1.Value = 0;
+                //bunifuVScrollBar1.Value = 0;
                 da = new OleDbDataAdapter();
                 //cmd = new OleDbCommand();
                 DataTable dt = new DataTable();
@@ -345,8 +356,8 @@ namespace ATLASSPA
                                     bunifuVScrollBar1.Maximum = 8;
                                 }*/
                                 //bunifuVScrollBar1.Maximum = search_count;
-                                //vScrollBar1.Maximum = search_count;
-                                //vScrollBar1.Minimum = 1;
+                                vScrollBar1.Maximum = search_count;
+                                vScrollBar1.Minimum = 0;
                                 //metroScrollBMINar1.Maximum = search_count+1;
                                 //bunifuDataGridView1.Update();
                                 foreach (DataRow row in dds.Rows)
@@ -393,8 +404,16 @@ namespace ATLASSPA
         {
             if (e.KeyCode == Keys.Enter)
             {
+                label1.Text =bunifuVScrollBar1.Maximum.ToString();
+                this.bunifuVScrollBar1.Maximum = 1;
+                label2.Text = bunifuVScrollBar1.Maximum.ToString();
+                bunifuVScrollBar1.Update();
+                label3.Text = bunifuVScrollBar1.Maximum.ToString();
                 bunifuDataGridView1.Rows.Clear();
-                bunifuDataGridView1.Refresh();
+                label4.Text = bunifuVScrollBar1.Maximum.ToString();
+                label5.Text = bunifuVScrollBar1.Maximum.ToString();
+                //bunifuDataGridView1.Refresh();
+                //e.KeyValue = 0;
                 Stopwatch sw;
                 sw = Stopwatch.StartNew();
 
@@ -410,16 +429,24 @@ namespace ATLASSPA
                     bunifuVScrollBar1.PerformLayout();
                     bunifuVScrollBar1.Maximum = bunifuDataGridView1.RowCount - 8;
                     //bunifuVScrollBar1.Minimum = 0;
-                    bunifuDataGridView1.FirstDisplayedScrollingRowIndex = scrollPosition;
+                    //bunifuDataGridView1.FirstDisplayedScrollingRowIndex = scrollPosition;
 
 
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message + "hi");
-                    //bunifuVScrollBar1.PerformLayout();
-                    bunifuVScrollBar1.Value=1;
+                    if(bunifuDataGridView1.RowCount != 0)
+                    {
+                        MessageBox.Show(ex.Message + "hi");
+                        //bunifuVScrollBar1.PerformLayout();
+                        bunifuVScrollBar1.Value = 1;
+                        bunifuVScrollBar1.Maximum = 1;
+                        //bunifuVScrollBar1.Minimum = 0;
+                        bunifuDataGridView1.FirstDisplayedScrollingRowIndex = scrollPosition;
+                    }
+
+                    
                 }
             }
         }
@@ -465,7 +492,8 @@ namespace ATLASSPA
 
         private void BunifuButton1_Click_1(object sender, EventArgs e)
         {
-
+            bunifuVScrollBar1.BindTo(bunifuDataGridView1);
+            label7.Text = bunifuVScrollBar1.Maximum.ToString();
         }
 
 

@@ -117,48 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dWxUQJhEIDRCy3D0NAO/qEDOtBMDyyCjvCu
-        AUtTkZQA5AvfzrxoN/1mp9O8jePjfrMcgNt8jPXpL6LdOD7vN+s38D/zWLfTuazLB8A1loOQ4G5CgoCQ
-        ICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgI
-        CQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCPyGNI91e3kJXGMen+/TaXZj
-        eT1/JuAWp4hextfDD6vuPSbUOeiKAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dWxUQJhEIDRCy3D0NAO/qEDOtBMDyyCjvCu
-        AUtTkZQA5AvfzrxoN/1mp9O8jePjfrMcgNt8jPXpL6LdOD7vN+s38D/zWLfTuazLB8A1loOQ4G5CgoCQ
-        ICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgI
-        CQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCPyGNI91e3kJXGMen+/TaXZj
-        eT1/JuAWp4hextfDD6vuPSbUOeiKAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dWxUQJhEIDRCy3D0NAO/qEDOtBMDyyCjvCu
-        AUtTkZQA5AvfzrxoN/1mp9O8jePjfrMcgNt8jPXpL6LdOD7vN+s38D/zWLfTuazLB8A1loOQ4G5CgoCQ
-        ICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgI
-        CQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCPyGNI91e3kJXGMen+/TaXZj
-        eT1/JuAWp4hextfDD6vuPSbUOeiKAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVHhe7dWxUQJhEIDRCy3D0NAO/qEDOtBMDyyCjvCu
-        AUtTkZQA5AvfzrxoN/1mp9O8jePjfrMcgNt8jPXpL6LdOD7vN+s38D/zWLfTuazLB8A1loOQ4G5CgoCQ
-        ICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgI
-        CQJCgoCQICAkCAgJAkKCgJAgICQICAkCQoKAkCAgJAgICQJCgoCQICAkCPyGNI91e3kJXGMen+/TaXZj
-        eT1/JuAWp4hextfDD6vuPSbUOeiKAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAYFJREFUWEft
+        lC1LBFEUhhcRMW3ZIPgDtmkxWbYbRBDWH+BvMIjJolhNGs2LWYNYRLQYxGQSi2AwahDB8X3PPQfuzh53
+        ZnbGBXUeeGDmns9Z2NuoKUOSJJNUX8cLBjfhudrU4/GAgbPwDho3cEbDPwsGteEDp6bgWVvTmNeBZ2pH
+        j8uBRvPwCRr3qsHYnOZ25STQlQZlQJMl+CrtApdwVeWzwRzmVrcAGqzDD2kVOIErcFnl8yk03uF+eBRG
+        XwDF2/BT2gSOoA1Oy5gR1xRfAEUTMP4KNjyA3uDYQxgPJ2vaNh8omIbHUhrgT7oDvYGeu5A1xgWc0vbD
+        QaJdMMYb3ILeoGGyhrVG9oWFhBa8ZnbEBvQG5JG1MVewpeP6QeC7C8ZrXMQ0fReWgINF+MKog9e0iB7P
+        cEHHD4JgT9ICXtMiGj1tnw2TQ41gjTbhbU6ZW/kCe/KWD+b+7QUGrlaehZBQL1AvUOkC9t9+lLdA1gLM
+        tTpj5AU8shbw+EUL1PwjGo0vzdazCS4+yBUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -178,4 +147,60 @@
         g6Fc53tMYCoAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="bunifuLabel9.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(240, 240, 240); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(240, 240, 240); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(240, 240, 240); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(240, 240, 240); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(240, 240, 240); text-align: left; }</value>
+  </data>
+  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAN8AAAAsCAYAAADl/22bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVHhe7d0/aFNRFMfxjo6Ojo6CDgoKKlKKCmboYIdK
+        LfiPIkawi2ARBQcpCC5FlwwdKlgoxUEoQoQK6dbRsWNGx44dn+c8zss9SU7SvNuO3x98ltx7bqcfeYmS
+        O0UIIYQQn06nc0Ys7O3tbYiO6IoCQJ9/QvuxJX15Ks5ZhfKih8hhh3Y4gHo+6ZuX1WmyaGtlsD1wEID6
+        DqRP161a4yMbz8tA37vd9vaPYvnVSjF3/1HRuDdfXLp4C4Bz5/Zc2Y/mi9fF+vqGL19JejVjFRsd2ajP
+        rb2h9+8+Flcuz4R/EEBsaWm5aLd/+wJ2xz6CymKz2ry7+6dscnQwgONNT88WOzu/fAFbVrX+SPHOyuJR
+        tXHlzYfwQACTe/L4pS+fPn4Of/6TF/WbzXLD5uYWj5rAKfn6peXL99YqlyILW9UG/dAYHQKgvoF3v59W
+        uRR58W+1gW80gdOj34RW3RJdq1yKvNj754WbNxrhIQDy6BeYVb+scinVgoqGAeTz/bLKpfjFaBhAPt8v
+        q1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKX4yGAeTz/bLKpfjFaBhA
+        Pt8vq1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKX4yGAeTz/bLKpfjF
+        aBhAPt8vq1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKX4yGAeTz/bLKpfjFaBhAPt8vq1yKvNj72cBrV++G
+        BwDIc9zPSBxUi/qDL9EBAOrT30SquiUOrXIp8mLvYpTFxefhIQDq0z5V3dKeWeVS9Mc8qw36I5/RIQDq
+        0/tOXPnWrHIpUr4LbkPxYP5ZeBCAyelHOP95T3q2YJXrjyzq7bPlJr3ggS9egJP5tvG9Vzyxb1UbjrRS
+        L0vR623LzXov3+zsw/BQAKPpO95A8Y706dKqFkc2NNxAaXX1c3ldGO+EwGh6uZD2RD/j+UdNJb0aviAl
+        imzkLnaghsGyOfqON1nxqsgA97IDJ7MvPRr/qDkuMrwgh6wJvS66979gAIS0Jy3pTdMqRAghhBDJ1NR/
+        O6gE9LKqCfUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>177, 17</value>
+  </metadata>
 </root>

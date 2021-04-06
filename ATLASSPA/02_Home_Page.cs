@@ -56,5 +56,13 @@ namespace ATLASSPA
             this.Hide();
             form_search_Employer.Show();
         }
+
+        private void BunifuButton4_Click(object sender, EventArgs e)
+        {
+            var form_search_Employer = new _05_SEARCH();
+            form_search_Employer.Closed += (s, args) => this.Close();
+            this.Hide();
+            form_search_Employer.Show();
+        }
     }
 }

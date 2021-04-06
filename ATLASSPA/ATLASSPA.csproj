@@ -250,6 +250,12 @@
     <Compile Include="03_Add_Employer.Designer.cs">
       <DependentUpon>03_Add_Employer.cs</DependentUpon>
     </Compile>
+    <Compile Include="05_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05_SEARCH.Designer.cs">
+      <DependentUpon>05_SEARCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="CLS_MICROSOFT.cs" />
     <Compile Include="04_frm_SEARCH.cs">
       <SubType>Form</SubType>
@@ -334,6 +340,9 @@
     <EmbeddedResource Include="01_Login_Panel.resx">
       <DependentUpon>01_Login_Panel.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05_SEARCH.resx">
+      <DependentUpon>05_SEARCH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
