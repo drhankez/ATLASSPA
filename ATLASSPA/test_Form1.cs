@@ -30,5 +30,25 @@ namespace ATLASSPA
         {
             this.Close();
         }
+
+        private void Test_Form1_Load(object sender, EventArgs e)
+        {
+            bunifuLabel1.Text = Save_Class.Instance.SC_id_employer.ToString();
+        }
+
+        private void MaterialToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EDITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,11 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(test_Form1));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.top_bar_pnl = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel100 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mODIFIERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRINTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.top_bar_pnl.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,8 +68,126 @@
             this.top_bar_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.top_bar_pnl.Location = new System.Drawing.Point(0, 0);
             this.top_bar_pnl.Name = "top_bar_pnl";
-            this.top_bar_pnl.Size = new System.Drawing.Size(790, 30);
+            this.top_bar_pnl.Size = new System.Drawing.Size(1271, 30);
             this.top_bar_pnl.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(56, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "SEARCH";
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bunifuLabel1.Location = new System.Drawing.Point(61, 103);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(132, 15);
+            this.bunifuLabel1.TabIndex = 90;
+            this.bunifuLabel1.Text = "Count Of Results Found :";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel100
+            // 
+            this.bunifuLabel100.AllowParentOverrides = false;
+            this.bunifuLabel100.AutoEllipsis = false;
+            this.bunifuLabel100.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel100.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel100.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel100.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bunifuLabel100.Location = new System.Drawing.Point(22, 103);
+            this.bunifuLabel100.Name = "bunifuLabel100";
+            this.bunifuLabel100.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel100.Size = new System.Drawing.Size(17, 15);
+            this.bunifuLabel100.TabIndex = 91;
+            this.bunifuLabel100.Text = "ID :";
+            this.bunifuLabel100.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel100.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pRINTToolStripMenuItem,
+            this.eDITToolStripMenuItem,
+            this.mODIFIERToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 30);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.menuStrip1.Size = new System.Drawing.Size(1271, 72);
+            this.menuStrip1.TabIndex = 102;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mODIFIERToolStripMenuItem
+            // 
+            this.mODIFIERToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.mODIFIERToolStripMenuItem.Name = "mODIFIERToolStripMenuItem";
+            this.mODIFIERToolStripMenuItem.Size = new System.Drawing.Size(93, 68);
+            this.mODIFIERToolStripMenuItem.Text = "MODIFIER";
+            // 
+            // pRINTToolStripMenuItem
+            // 
+            this.pRINTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aToolStripMenuItem,
+            this.bToolStripMenuItem,
+            this.cToolStripMenuItem,
+            this.dToolStripMenuItem});
+            this.pRINTToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.pRINTToolStripMenuItem.Image = global::ATLASSPA.Properties.Resources.icons8_print;
+            this.pRINTToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pRINTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.pRINTToolStripMenuItem.Name = "pRINTToolStripMenuItem";
+            this.pRINTToolStripMenuItem.Size = new System.Drawing.Size(129, 68);
+            this.pRINTToolStripMenuItem.Text = "PRINT";
+            // 
+            // aToolStripMenuItem
+            // 
+            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.aToolStripMenuItem.Text = "CONTRAT";
+            this.aToolStripMenuItem.Click += new System.EventHandler(this.AToolStripMenuItem_Click);
+            // 
+            // bToolStripMenuItem
+            // 
+            this.bToolStripMenuItem.Name = "bToolStripMenuItem";
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.bToolStripMenuItem.Text = "FICHE DE PAIE";
+            // 
+            // cToolStripMenuItem
+            // 
+            this.cToolStripMenuItem.Image = global::ATLASSPA.Properties.Resources.stunning_animated_gifs_01;
+            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.cToolStripMenuItem.Text = "ATESTATION";
+            // 
+            // dToolStripMenuItem
+            // 
+            this.dToolStripMenuItem.Image = global::ATLASSPA.Properties.Resources.icons8_female_user_64px_1;
+            this.dToolStripMenuItem.Name = "dToolStripMenuItem";
+            this.dToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.dToolStripMenuItem.Text = "D";
+            // 
+            // eDITToolStripMenuItem
+            // 
+            this.eDITToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.eDITToolStripMenuItem.Image = global::ATLASSPA.Properties.Resources.icons8_compose;
+            this.eDITToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(118, 68);
+            this.eDITToolStripMenuItem.Text = "EDIT";
+            this.eDITToolStripMenuItem.Click += new System.EventHandler(this.EDITToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -70,7 +199,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(668, 0);
+            this.button1.Location = new System.Drawing.Point(1149, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 30);
             this.button1.TabIndex = 80;
@@ -87,7 +216,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(729, 0);
+            this.button4.Location = new System.Drawing.Point(1210, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 30);
             this.button4.TabIndex = 81;
@@ -104,33 +233,30 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(56, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "SEARCH";
-            // 
             // test_Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(790, 432);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(44)))));
+            this.ClientSize = new System.Drawing.Size(1271, 491);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.bunifuLabel100);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.top_bar_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "test_Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "test_Form1";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Test_Form1_Load);
             this.top_bar_pnl.ResumeLayout(false);
             this.top_bar_pnl.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,5 +267,15 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel100;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem pRINTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mODIFIERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
     }
 }

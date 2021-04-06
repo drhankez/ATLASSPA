@@ -59,6 +59,11 @@ namespace ATLASSPA
 
         private void BunifuTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.F1)
+            {
+                //MessageBox.Show("F1 pressed");
+                bunifuTextBox1.SelectAll();
+            }
             if (e.KeyCode == Keys.Enter)
             {
 
@@ -128,7 +133,7 @@ namespace ATLASSPA
                                 sda.Fill(dds);
                                 b2unifuDataGridView1.ClearSelection();
                                 //int search_count = dds.Rows.Count;
-                                
+
                                 foreach (DataRow row in dds.Rows)
                                 {
                                     //byte[] imgBytes = (byte[])row[23];
@@ -170,7 +175,7 @@ namespace ATLASSPA
             bunifuLabel6.Text = b2unifuDataGridView1.RowCount.ToString();
             vS1.Value = 0;
             vS1.Update();
-            vS1.Maximum = b2unifuDataGridView1.Rows.Count - 1;
+            vS1.Maximum = b2unifuDataGridView1.Rows.Count;
             vS1.Update();
             bunifuLabel1.Text = b2unifuDataGridView1.Rows.Count.ToString();
         }
@@ -265,6 +270,26 @@ namespace ATLASSPA
         private void B2unifuDataGridView1_DoubleClick_1(object sender, EventArgs e)
         {
             open_frm_popup(e);
+        }
+
+        private void B2unifuDataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in b2unifuDataGridView1.SelectedRows)
+            {
+                string value1 = row.Cells[0].Value.ToString();
+                string value2 = row.Cells[1].Value.ToString();
+                bunifuLabel6.Text = value1;
+                Save_Class.Instance.SC_id_employer = int.Parse (row.Cells[0].Value.ToString());
+                //...
+            }
+        }
+
+        private void _05_SEARCH_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                MessageBox.Show("F1 pressed");
+            }
         }
     }
 }

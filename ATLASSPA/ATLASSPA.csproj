@@ -275,7 +275,7 @@
     <Compile Include="NOTIFICATI0N.Designer.cs">
       <DependentUpon>NOTIFICATI0N.cs</DependentUpon>
     </Compile>
-    <Compile Include="Save_Class.cs" />
+    <Compile Include="06_Save_Class.cs" />
     <Compile Include="02_Home_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -468,6 +468,15 @@
     <None Include="Resources\icons8_search_property_24px.png" />
     <Content Include="MetroFramework.txt" />
     <None Include="Resources\loading-9.gif" />
+    <None Include="Resources\icons8_search_client_80px_1.png" />
+    <None Include="Resources\icons8_search_client_80px_2.png" />
+    <None Include="Resources\icons8_send_to_printer.ico" />
+    <None Include="Resources\icons8_print.ico" />
+    <None Include="Resources\icons8_send_to_printer1.ico" />
+    <None Include="Resources\printer_error_80px.png" />
+    <None Include="Resources\icons8_compose_96px_1.png" />
+    <None Include="Resources\icons8_compose_48px.png" />
+    <None Include="Resources\icons8_compose.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
