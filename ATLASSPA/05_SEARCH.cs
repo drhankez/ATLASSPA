@@ -235,11 +235,12 @@ namespace ATLASSPA
 
         public void open_frm_popup(EventArgs e)
         {
+
             Form formbk = new Form();
             frm_SEARCH frmsh = new frm_SEARCH();
             try
             {
-                using (test_Form1 uu = new test_Form1())
+                using (T2 uu = new T2())
                 {
                     formbk.StartPosition = FormStartPosition.Manual;
                     formbk.FormBorderStyle = FormBorderStyle.None;

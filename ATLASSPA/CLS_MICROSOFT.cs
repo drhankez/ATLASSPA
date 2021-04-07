@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ATLASSPA
 {
@@ -28,13 +24,13 @@ namespace ATLASSPA
                     cmd.Parameters.AddWithValue("DATE_N", Save_Class.Instance.SC_DATE_N_employer);
                     cmd.Parameters.AddWithValue("LIEU_N", Save_Class.Instance.SC_LIEU_N_employer);
                     cmd.Parameters.AddWithValue("DEMEURANT", Save_Class.Instance.SC_DEMEURANT_employer);
-                    cmd.Parameters.AddWithValue("ENGAGEMENT","@"+ Save_Class.Instance.SC_ENGAGEMENT_employer);
+                    cmd.Parameters.AddWithValue("ENGAGEMENT", "@" + Save_Class.Instance.SC_ENGAGEMENT_employer);
                     cmd.Parameters.AddWithValue("DUREE", "@" + Save_Class.Instance.SC_DUREE_employer);
                     cmd.Parameters.AddWithValue("ENTREE", "@" + Save_Class.Instance.SC_ENTREE_employer);
                     cmd.Parameters.AddWithValue("SORTIE", "@" + Save_Class.Instance.SC_SORTIE_employer);
                     cmd.Parameters.AddWithValue("CHANTIER", "@" + Save_Class.Instance.SC_CHANTIER_employer);
-                    cmd.Parameters.AddWithValue("SALAIRE", "@" + Save_Class.Instance.SC_SALAIRE_employer );
-                    cmd.Parameters.AddWithValue("NMR_ASSU", Save_Class.Instance.SC_NMR_ASSU_employer );
+                    cmd.Parameters.AddWithValue("SALAIRE", "@" + Save_Class.Instance.SC_SALAIRE_employer);
+                    cmd.Parameters.AddWithValue("NMR_ASSU", Save_Class.Instance.SC_NMR_ASSU_employer);
 
                     cmd.Parameters.AddWithValue("SITUATION_F", Save_Class.Instance.SC_SITUATION_F_employer);
                     cmd.Parameters.AddWithValue("NBR_ENF", Save_Class.Instance.SC_NBR_ENF_employer);

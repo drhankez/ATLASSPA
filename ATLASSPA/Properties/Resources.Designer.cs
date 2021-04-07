@@ -83,6 +83,16 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_to {
+            get {
+                object obj = ResourceManager.GetObject("icons8_back_to", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_browse_folder_48px {
             get {
                 object obj = ResourceManager.GetObject("icons8_browse_folder_48px", resourceCulture);
@@ -96,6 +106,16 @@ namespace ATLASSPA.Properties {
         internal static System.Drawing.Bitmap icons8_cancel_25px {
             get {
                 object obj = ResourceManager.GetObject("icons8_cancel_25px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_25px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_25px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,36 @@ namespace ATLASSPA.Properties {
         internal static System.Drawing.Bitmap icons8_cancel_50px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_cancel_50px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_50px_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_50px_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_50px_12 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_50px_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancel_50px_13 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cancel_50px_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +266,16 @@ namespace ATLASSPA.Properties {
         internal static System.Drawing.Bitmap icons8_home_page_481 {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_page_481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_macos_close {
+            get {
+                object obj = ResourceManager.GetObject("icons8_macos_close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

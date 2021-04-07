@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.OleDb;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ATLASSPA
 {
@@ -21,7 +17,7 @@ namespace ATLASSPA
         public string cnnString = "Provider =Microsoft.Jet.Oledb.4.0; Data Source = " + AppDomain.CurrentDomain.BaseDirectory + "\\ATLAS_DB.mdb;";
         //VARIABLE
         public int O_id_employer;
-        public  string O_NOM_employer;
+        public string O_NOM_employer;
         public string O_PNOM_employer;
         public string O_DATE_N_employer;
         public string O_LIEU_N_employer;

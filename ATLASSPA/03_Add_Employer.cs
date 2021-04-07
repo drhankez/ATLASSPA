@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -17,7 +10,7 @@ namespace ATLASSPA
         {
             get
             {
-                if (_obj==null)
+                if (_obj == null)
                 {
                     _obj = new Add_Employer();
                 }
@@ -109,7 +102,7 @@ namespace ATLASSPA
             un.Dock = DockStyle.Fill;
             PnlContainer.Controls.Add(un);
             timer1.Enabled = true;
-           
+
 
         }
 

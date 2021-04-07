@@ -898,7 +898,7 @@
             // bunifuCards1
             // 
             this.bunifuCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.bunifuCards1.BorderRadius = 5;
+            this.bunifuCards1.BorderRadius = 18;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(178)))));
             this.bunifuCards1.Controls.Add(this.bunifuPictureBox1);
@@ -917,7 +917,7 @@
             this.bunifuCards1.Controls.Add(this.bunifuLabel5);
             this.bunifuCards1.Controls.Add(this.bunifuLabel6);
             this.bunifuTransition13.SetDecoration(this.bunifuCards1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuTransition11.SetDecoration(this.bunifuCards1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition11.SetDecoration(this.bunifuCards1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.BottomMirror);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(606, 13);
             this.bunifuCards1.Name = "bunifuCards1";

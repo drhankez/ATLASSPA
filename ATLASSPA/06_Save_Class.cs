@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ATLASSPA
 {
@@ -10,7 +6,7 @@ namespace ATLASSPA
     {
         private Save_Class() { }
         private static readonly Lazy<Save_Class> instance = new Lazy<Save_Class>(() => new Save_Class());
-        public static Save_Class Instance { get {return instance.Value; } }
+        public static Save_Class Instance { get { return instance.Value; } }
         public int SC_id_employer { get; set; }
         public string SC_NOM_employer { get; set; }
         public string SC_PNOM_employer { get; set; }
