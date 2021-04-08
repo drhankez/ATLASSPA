@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_P1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             this.metroStyleExtender1 = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -45,9 +46,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.bunifuColorTransition1 = new Bunifu.UI.WinForms.BunifuColorTransition(this.components);
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label11 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Engagement = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +58,8 @@
             this.jusqua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chantier = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuGradientPanel6 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -93,16 +97,15 @@
             this.bunifuGradientPanel7 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.bunifuPanel1.SuspendLayout();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
+            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             this.bunifuGradientPanel6.SuspendLayout();
             this.bunifuGradientPanel8.SuspendLayout();
             this.bunifuGradientPanel5.SuspendLayout();
             this.bunifuGradientPanel7.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -116,6 +119,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuLabel1.Location = new System.Drawing.Point(42, 7);
@@ -130,6 +134,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(91, 5);
@@ -141,6 +146,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label16, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(342, 5);
@@ -152,6 +158,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label18, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label18.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(805, 5);
@@ -163,6 +170,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label21, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(214, 5);
@@ -174,6 +182,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label22, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(986, 5);
@@ -185,6 +194,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label23, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(730, 5);
@@ -196,6 +206,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label24, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(600, 5);
@@ -207,6 +218,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label25, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(410, 5);
@@ -229,51 +241,76 @@
             this.bunifuColorTransition1.StartColor = System.Drawing.Color.White;
             this.bunifuColorTransition1.TransitionControl = this.bunifuGradientPanel1;
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(13)))), ((int)(((byte)(134)))));
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
+            this.bunifuGradientPanel1.Controls.Add(this.label11);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(65)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(15)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(85)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(8, 25);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(717, 34);
+            this.bunifuGradientPanel1.TabIndex = 120;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(12, 7);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(91, 21);
+            this.bunifuCustomLabel7.TabIndex = 122;
+            this.bunifuCustomLabel7.Text = "Chantier : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label11.Location = new System.Drawing.Point(109, 7);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 21);
+            this.label11.TabIndex = 104;
+            this.label11.Text = "label11";
+            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 18;
             this.bunifuElipse2.TargetControl = this.bunifuDataGridView1;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 5;
-            this.bunifuElipse3.TargetControl = this;
-            // 
-            // bunifuPanel1
-            // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BorderRadius = 22;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.bunifuDataGridView1);
-            this.bunifuPanel1.Location = new System.Drawing.Point(3, 237);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1109, 332);
-            this.bunifuPanel1.TabIndex = 553;
             // 
             // bunifuDataGridView1
             // 
             this.bunifuDataGridView1.AllowCustomTheming = false;
             this.bunifuDataGridView1.AllowUserToAddRows = false;
             this.bunifuDataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.N,
@@ -301,14 +338,15 @@
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2Transition1.SetDecoration(this.bunifuDataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
@@ -377,6 +415,27 @@
             this.Salaire.Name = "Salaire";
             this.Salaire.ReadOnly = true;
             // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 5;
+            this.bunifuElipse3.TargetControl = this;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 22;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.bunifuDataGridView1);
+            this.guna2Transition1.SetDecoration(this.bunifuPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuPanel1.Location = new System.Drawing.Point(3, 237);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(1109, 332);
+            this.bunifuPanel1.TabIndex = 553;
+            // 
             // bunifuGradientPanel6
             // 
             this.bunifuGradientPanel6.BackColor = System.Drawing.Color.Transparent;
@@ -393,9 +452,10 @@
             this.bunifuGradientPanel6.Controls.Add(this.label1);
             this.bunifuGradientPanel6.Controls.Add(this.label5);
             this.bunifuGradientPanel6.Controls.Add(this.bunifuCustomLabel12);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuGradientPanel6.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
             this.bunifuGradientPanel6.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
-            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
+            this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.Indigo;
             this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
             this.bunifuGradientPanel6.Location = new System.Drawing.Point(2, 72);
             this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
@@ -406,6 +466,7 @@
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(9, 108);
@@ -417,6 +478,7 @@
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(9, 83);
@@ -428,6 +490,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(149, 58);
@@ -439,6 +502,7 @@
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(9, 58);
@@ -450,6 +514,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(149, 83);
@@ -461,6 +526,7 @@
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(9, 33);
@@ -472,6 +538,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(149, 33);
@@ -483,6 +550,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(149, 8);
@@ -494,6 +562,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(149, 108);
@@ -505,6 +574,7 @@
             // bunifuCustomLabel12
             // 
             this.bunifuCustomLabel12.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel12.Location = new System.Drawing.Point(9, 8);
@@ -530,6 +600,7 @@
             this.bunifuGradientPanel8.Controls.Add(this.label10);
             this.bunifuGradientPanel8.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuGradientPanel8.Controls.Add(this.label12);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuGradientPanel8.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
             this.bunifuGradientPanel8.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
             this.bunifuGradientPanel8.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
@@ -543,6 +614,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label13, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label13.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(169, 108);
@@ -554,6 +626,7 @@
             // bunifuCustomLabel25
             // 
             this.bunifuCustomLabel25.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel25, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel25.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel25.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel25.Location = new System.Drawing.Point(14, 108);
@@ -565,6 +638,7 @@
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel9.Location = new System.Drawing.Point(14, 8);
@@ -576,6 +650,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(169, 8);
@@ -587,6 +662,7 @@
             // bunifuCustomLabel11
             // 
             this.bunifuCustomLabel11.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel11.Location = new System.Drawing.Point(169, 33);
@@ -598,6 +674,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(198)))), ((int)(((byte)(0)))));
             this.label8.Location = new System.Drawing.Point(14, 58);
@@ -609,6 +686,7 @@
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(14, 33);
@@ -620,6 +698,7 @@
             // bunifuCustomLabel20
             // 
             this.bunifuCustomLabel20.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel20, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel20.Font = new System.Drawing.Font("Segoe UI Black", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel20.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel20.Location = new System.Drawing.Point(278, 110);
@@ -631,6 +710,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(25)))), ((int)(((byte)(22)))));
             this.label10.Location = new System.Drawing.Point(169, 58);
@@ -642,6 +722,7 @@
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(14, 83);
@@ -653,6 +734,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label12.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(169, 83);
@@ -677,6 +759,7 @@
             this.bunifuGradientPanel5.Controls.Add(this.bunifuCustomLabel19);
             this.bunifuGradientPanel5.Controls.Add(this.bunifuCustomLabel14);
             this.bunifuGradientPanel5.Controls.Add(this.label15);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
             this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
             this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
@@ -690,6 +773,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label14, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label14.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(172, 8);
@@ -701,6 +785,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label17, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label17.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(172, 33);
@@ -712,6 +797,7 @@
             // bunifuCustomLabel18
             // 
             this.bunifuCustomLabel18.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel18.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel18.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel18.Location = new System.Drawing.Point(33, 58);
@@ -723,6 +809,7 @@
             // bunifuCustomLabel17
             // 
             this.bunifuCustomLabel17.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel17, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel17.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel17.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel17.Location = new System.Drawing.Point(33, 33);
@@ -734,6 +821,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label20, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label20.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(99, 62);
@@ -745,6 +833,7 @@
             // bunifuCustomLabel24
             // 
             this.bunifuCustomLabel24.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel24, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel24.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel24.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel24.Location = new System.Drawing.Point(33, 8);
@@ -756,6 +845,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label19, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label19.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(172, 108);
@@ -767,6 +857,7 @@
             // bunifuCustomLabel19
             // 
             this.bunifuCustomLabel19.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel19, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel19.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel19.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel19.Location = new System.Drawing.Point(33, 83);
@@ -778,6 +869,7 @@
             // bunifuCustomLabel14
             // 
             this.bunifuCustomLabel14.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel14, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel14.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel14.Location = new System.Drawing.Point(33, 108);
@@ -789,6 +881,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label15, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(172, 83);
@@ -805,6 +898,7 @@
             this.bunifuGradientPanel7.BorderRadius = 12;
             this.bunifuGradientPanel7.Controls.Add(this.bunifuCustomLabel10);
             this.bunifuGradientPanel7.Controls.Add(this.label6);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
             this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
             this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
@@ -818,6 +912,7 @@
             // bunifuCustomLabel10
             // 
             this.bunifuCustomLabel10.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel10.Location = new System.Drawing.Point(8, 7);
@@ -829,6 +924,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(97, 7);
@@ -837,47 +933,32 @@
             this.label6.TabIndex = 99;
             this.label6.Text = "label6";
             // 
-            // bunifuGradientPanel1
+            // guna2Transition1
             // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(13)))), ((int)(((byte)(134)))));
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 1;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel1.Controls.Add(this.label11);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(65)))), ((int)(((byte)(178)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(188)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(15)))), ((int)(((byte)(178)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(85)))), ((int)(((byte)(178)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(8, 25);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(717, 34);
-            this.bunifuGradientPanel1.TabIndex = 120;
+            this.guna2Transition1.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation3;
             // 
-            // bunifuCustomLabel7
+            // guna2ColorTransition1
             // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(12, 7);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(91, 21);
-            this.bunifuCustomLabel7.TabIndex = 122;
-            this.bunifuCustomLabel7.Text = "Chantier : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(109, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 21);
-            this.label11.TabIndex = 104;
-            this.label11.Text = "label11";
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
             // 
             // UC_P1
             // 
@@ -899,11 +980,14 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.bunifuLabel1);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Name = "UC_P1";
             this.Size = new System.Drawing.Size(1124, 572);
             this.Load += new System.EventHandler(this.UC_P1_Load);
-            this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            this.bunifuPanel1.ResumeLayout(false);
             this.bunifuGradientPanel6.ResumeLayout(false);
             this.bunifuGradientPanel6.PerformLayout();
             this.bunifuGradientPanel8.ResumeLayout(false);
@@ -912,8 +996,6 @@
             this.bunifuGradientPanel5.PerformLayout();
             this.bunifuGradientPanel7.ResumeLayout(false);
             this.bunifuGradientPanel7.PerformLayout();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -984,5 +1066,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn jusqua;
         private System.Windows.Forms.DataGridViewTextBoxColumn Chantier;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salaire;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
     }
 }

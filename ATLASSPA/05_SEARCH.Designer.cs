@@ -36,6 +36,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_05_SEARCH));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,23 +45,27 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.vS1 = new System.Windows.Forms.VScrollBar();
             this.b2unifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
+            this.bunifuColorTransition1 = new Bunifu.UI.WinForms.BunifuColorTransition(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.b2unifuDataGridView1)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::ATLASSPA.Properties.Resources.icons8_search_property_24px;
             this.pictureBox1.Location = new System.Drawing.Point(24, 31);
             this.pictureBox1.Name = "pictureBox1";
@@ -72,6 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(61, 30);
@@ -91,6 +97,7 @@
             // 
             this.bunifuDragControl2.Fixed = true;
             this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = null;
             this.bunifuDragControl2.Vertical = true;
             // 
             // bunifuLabel1
@@ -99,9 +106,10 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel1.Location = new System.Drawing.Point(180, 133);
+            this.bunifuLabel1.Location = new System.Drawing.Point(161, 19);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(24, 15);
@@ -116,9 +124,10 @@
             this.bunifuLabel20.AutoEllipsis = false;
             this.bunifuLabel20.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel20.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel20, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel20.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel20.Location = new System.Drawing.Point(452, 83);
+            this.bunifuLabel20.Location = new System.Drawing.Point(13, 61);
             this.bunifuLabel20.Name = "bunifuLabel20";
             this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel20.Size = new System.Drawing.Size(69, 15);
@@ -133,9 +142,10 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel2.Location = new System.Drawing.Point(42, 154);
+            this.bunifuLabel2.Location = new System.Drawing.Point(13, 40);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(99, 15);
@@ -144,32 +154,16 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel4.Location = new System.Drawing.Point(42, 175);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(69, 15);
-            this.bunifuLabel4.TabIndex = 88;
-            this.bunifuLabel4.Text = "bunifuLabel4";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // bunifuLabel5
             // 
             this.bunifuLabel5.AllowParentOverrides = false;
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel5.Location = new System.Drawing.Point(42, 133);
+            this.bunifuLabel5.Location = new System.Drawing.Point(13, 19);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(132, 15);
@@ -184,9 +178,10 @@
             this.bunifuLabel6.AutoEllipsis = false;
             this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel6.Location = new System.Drawing.Point(894, 82);
+            this.bunifuLabel6.Location = new System.Drawing.Point(232, 12);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(69, 15);
@@ -201,9 +196,10 @@
             this.bunifuLabel7.AutoEllipsis = false;
             this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel7.Location = new System.Drawing.Point(894, 103);
+            this.bunifuLabel7.Location = new System.Drawing.Point(232, 33);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(69, 15);
@@ -217,9 +213,10 @@
             this.bunifuLabel8.AllowParentOverrides = false;
             this.bunifuLabel8.AutoEllipsis = false;
             this.bunifuLabel8.CursorType = null;
+            this.guna2Transition1.SetDecoration(this.bunifuLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel8.Location = new System.Drawing.Point(894, 124);
+            this.bunifuLabel8.Location = new System.Drawing.Point(232, 54);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(69, 15);
@@ -228,24 +225,10 @@
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel9
-            // 
-            this.bunifuLabel9.AllowParentOverrides = false;
-            this.bunifuLabel9.AutoEllipsis = false;
-            this.bunifuLabel9.CursorType = null;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel9.Location = new System.Drawing.Point(894, 145);
-            this.bunifuLabel9.Name = "bunifuLabel9";
-            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(69, 15);
-            this.bunifuLabel9.TabIndex = 94;
-            this.bunifuLabel9.Text = "bunifuLabel9";
-            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // vS1
             // 
+            this.vS1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.guna2Transition1.SetDecoration(this.vS1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.vS1.Location = new System.Drawing.Point(1224, 220);
             this.vS1.Name = "vS1";
             this.vS1.Size = new System.Drawing.Size(24, 416);
@@ -293,6 +276,7 @@
             this.b2unifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.b2unifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.b2unifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Transition1.SetDecoration(this.b2unifuDataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -336,6 +320,7 @@
             this.bunifuTextBox1.BorderThickness = 3;
             this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2Transition1.SetDecoration(this.bunifuTextBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuTextBox1.DefaultText = "";
             this.bunifuTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
@@ -347,7 +332,7 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(324, 125);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(399, 31);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -383,7 +368,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(545, 44);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(538, 44);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 1;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -394,6 +379,7 @@
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             this.bunifuTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BunifuTextBox1_KeyDown);
+            this.bunifuTextBox1.MouseEnter += new System.EventHandler(this.BunifuTextBox1_MouseEnter);
             // 
             // bunifuImageButton2
             // 
@@ -404,6 +390,7 @@
             this.bunifuImageButton2.AllowZooming = true;
             this.bunifuImageButton2.AllowZoomingOnFocus = false;
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.bunifuImageButton2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.ErrorImage")));
             this.bunifuImageButton2.FadeWhenInactive = false;
@@ -440,6 +427,7 @@
             this.bunifuImageButton1.AllowZooming = true;
             this.bunifuImageButton1.AllowZoomingOnFocus = false;
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.bunifuImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
             this.bunifuImageButton1.FadeWhenInactive = false;
@@ -467,28 +455,82 @@
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.BunifuImageButton1_Click);
             // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.VertSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BorderRadius = 22;
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel5);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel1);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel2);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel6);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel7);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel8);
+            this.guna2GradientPanel1.Controls.Add(this.bunifuLabel20);
+            this.guna2Transition1.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.Indigo;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(138)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(399, 81);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(538, 96);
+            this.guna2GradientPanel1.TabIndex = 109;
+            // 
+            // guna2ColorTransition1
+            // 
+            this.guna2ColorTransition1.AutoTransition = true;
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
+            // 
+            // bunifuColorTransition1
+            // 
+            this.bunifuColorTransition1.AutoTransition = true;
+            this.bunifuColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Purple,
+        System.Drawing.Color.LightBlue,
+        System.Drawing.Color.Orange};
+            this.bunifuColorTransition1.EndColor = System.Drawing.Color.White;
+            this.bunifuColorTransition1.Interval = 10;
+            this.bunifuColorTransition1.ProgessValue = 0;
+            this.bunifuColorTransition1.StartColor = System.Drawing.Color.White;
+            this.bunifuColorTransition1.TransitionControl = null;
+            // 
             // _05_SEARCH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1270, 705);
+            this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.bunifuTextBox1);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.b2unifuDataGridView1);
             this.Controls.Add(this.vS1);
-            this.Controls.Add(this.bunifuLabel9);
-            this.Controls.Add(this.bunifuLabel8);
-            this.Controls.Add(this.bunifuLabel7);
-            this.Controls.Add(this.bunifuLabel6);
-            this.Controls.Add(this.bunifuLabel5);
-            this.Controls.Add(this.bunifuLabel4);
-            this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel20);
-            this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.bunifuTextBox1);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "_05_SEARCH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -497,6 +539,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this._05_SEARCH_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.b2unifuDataGridView1)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,11 +553,9 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel20;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
@@ -521,5 +563,9 @@
         private Bunifu.UI.WinForms.BunifuDataGridView b2unifuDataGridView1;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
+        private Bunifu.UI.WinForms.BunifuColorTransition bunifuColorTransition1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
     }
 }

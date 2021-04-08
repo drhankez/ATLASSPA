@@ -63,9 +63,9 @@ namespace ATLASSPA
 
         private void Timer100_Tick(object sender, EventArgs e)
         {
-             bunifuTransition100.Show(PnlContainer_employee);
+             gtran1.ShowSync(PnlContainer_employee);
             //bunifuTransition1.ShowSync(panel3);
-            bunifuTransition100.WaitAllAnimations();
+            gtran1.WaitAllAnimations();
 
             timer100.Stop();
             var bytes = (byte[])Save_Class.Instance.SC_IMG_employer_byteArray;
@@ -75,15 +75,17 @@ namespace ATLASSPA
             }
             label20.Text = Save_Class.Instance.SC_EMAIL__employer;
             label1.Text = Save_Class.Instance.SC_TELEPH_employer;
+            label3.Text = Save_Class.Instance.SC_NOM_employer;
+            label4.Text = Save_Class.Instance.SC_PNOM_employer;
 
 
         }
 
         private void BunifuButton2_Click(object sender, EventArgs e)
         {
-            bunifuTransition100.Hide(PnlContainer_employee);
+            gtran1.HideSync(PnlContainer_employee);
             //bunifuTransition1.ShowSync(panel3);
-            bunifuTransition100.WaitAllAnimations();
+            gtran1.WaitAllAnimations();
             PnlContainer_employee.Controls.Clear();
         }
 

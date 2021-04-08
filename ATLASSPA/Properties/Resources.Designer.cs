@@ -253,6 +253,16 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_contacts {
+            get {
+                object obj = ResourceManager.GetObject("icons8_contacts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_drop_of_blood {
             get {
                 object obj = ResourceManager.GetObject("icons8_drop_of_blood", resourceCulture);

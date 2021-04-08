@@ -52,14 +52,19 @@ namespace ATLASSPA
             if (e.KeyCode == Keys.F1)
             {
                 //MessageBox.Show("F1 pressed");
+              
                 bunifuTextBox1.SelectAll();
             }
             if (e.KeyCode == Keys.Enter)
             {
+                //guna2GradientPanel1.ShadowDecoration.Color = Color.AliceBlue;
+                guna2Transition1.HideSync(b2unifuDataGridView1);
 
                 Stopwatch sw;
                 sw = Stopwatch.StartNew();
                 SEARCH_IN_DB();
+                guna2Transition1.ShowSync(b2unifuDataGridView1);
+
 
             }
         }
@@ -301,6 +306,36 @@ namespace ATLASSPA
             var form1 = new Home_Page();
             form1.Closed += (s, args) => this.Close();
             form1.Show();
+        }
+
+        private void Guna2GradientPanel1_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Guna2GradientPanel2_MouseEnter(object sender, EventArgs e)
+        {
+            ((Guna.UI2.WinForms.Guna2GradientPanel)sender).ShadowDecoration.Color = Color.AliceBlue;
+        }
+
+        private void BunifuTextBox1_MouseEnter(object sender, EventArgs e)
+        {
+            //((Guna.UI2.WinForms.Guna2GradientPanel)sender).ShadowDecoration.Color = Color.DeepPink;
+        }
+
+        private void Guna2GradientPanel2_MouseLeave(object sender, EventArgs e)
+        {
+            ((Guna.UI2.WinForms.Guna2GradientPanel)sender).ShadowDecoration.Color = Color.DeepPink;
+        }
+
+        private void Guna2Button2_Click(object sender, EventArgs e)
+        {
+            guna2Transition1.ShowSync(b2unifuDataGridView1);
+        }
+
+        private void Guna2Button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
