@@ -1,17 +1,27 @@
 ﻿using System;
 using System.Data;
 using System.Data.OleDb;
+using System.Drawing;
+using System.IO;
 
 namespace ATLASSPA
 {
     public class CLS_MICROSOFT
     {
+        public byte[] SavePhoto(string img_path)
+        {
+            MemoryStream ms = new MemoryStream();
+            Image uploaded6 = Image.FromFile(img_path);
+            uploaded6.Save(ms, uploaded6.RawFormat);
+            return ms.GetBuffer();
+        }
         public void Access_save()
         {
+            
             string ConnString = "Provider =Microsoft.Jet.Oledb.4.0; Data Source = " + AppDomain.CurrentDomain.BaseDirectory + "\\ATLAS_DB.mdb";
 
             string SqlString = "Insert Into T_1 (NOM,PNOM,DATE_N,LIEU_N,DEMEURANT,ENGAGEMENT,DUREE,ENTREE,SORTIE,CHANTIER,SALAIRE,NMR_ASSU,SITUATION_F,NBR_ENF,NMR_ADH,GR_S,TELEPH,EMAIL_,SINF_ ,ETAT_CONTR,CONTRAT_TYPE,DATE_REAL,IMG,GENDER)  Values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-
+            Save_Class.Instance.SC_IMG_employer_byteArray = SavePhoto(Save_Class.Instance.SC_IMG_employer);
             using (OleDbConnection conn = new OleDbConnection(ConnString))
 
             {
@@ -47,8 +57,10 @@ namespace ATLASSPA
 
                     //cmd.Parameters.AddWithValue("SINF_", bunifuTextBox19.Text);
                     // cmd.Parameters.AddWithValue("LATIN_NOM", bunifuTextBox20.Text);
-                    cmd.Parameters.AddWithValue("IMG", "SavePhoto()");
+
+                    cmd.Parameters.AddWithValue("IMG", Save_Class.Instance.SC_IMG_employer_byteArray);
                     cmd.Parameters.AddWithValue("GENDRE", Save_Class.Instance.SC_GENDER_employer);
+                    
                     //  cmd.Parameters.AddWithValue("GR_S", bunifuTextBox1.Text);
                     //cmd.Parameters.AddWithValue("EMAIL_", bunifuTextBox1.Text);
 

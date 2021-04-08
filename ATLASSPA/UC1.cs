@@ -552,32 +552,34 @@ namespace ATLASSPA
             //cur_emply_obj.O_NOM_employer = bunifuTextBox1.Text.ToUpper() ;
             //bunifuCustomLabel23.Text = cur_emply_obj.O_NOM_employer;
             // Save_Class.Instance.SC_NOM_employer = bunifuTextBox1.Text.ToUpper();
-            Save_Class.Instance.SC_NOM_employer = bunifuTextBox1.Text.ToUpper();
-            Save_Class.Instance.SC_PNOM_employer = bunifuTextBox2.Text.ToUpper();
-            Save_Class.Instance.SC_DATE_N_employer = bunifuTextBox3.Text + "/" + bunifuTextBox4.Text + "/" + bunifuTextBox5.Text;
-            Save_Class.Instance.SC_LIEU_N_employer = bunifuTextBox6.Text.ToUpper();
-            Save_Class.Instance.SC_DEMEURANT_employer = bunifuTextBox7.Text.ToUpper();
-            Save_Class.Instance.SC_ENGAGEMENT_employer = bunifuTextBox8.Text.ToUpper();
-            Save_Class.Instance.SC_DUREE_employer = bunifuTextBox9.Text.ToUpper();
-            Save_Class.Instance.SC_ENTREE_employer = bunifuTextBox10.Text + "/" + bunifuTextBox11.Text + "/" + bunifuTextBox12.Text;
+            Save_Class.Instance.SC_NOM_employer         = bunifuTextBox1.Text.ToUpper();
+            Save_Class.Instance.SC_PNOM_employer        = bunifuTextBox2.Text.ToUpper();
+            Save_Class.Instance.SC_DATE_N_employer      = bunifuTextBox3.Text + "/" + bunifuTextBox4.Text + "/" + bunifuTextBox5.Text;
+            Save_Class.Instance.SC_LIEU_N_employer      = bunifuTextBox6.Text.ToUpper();
+            Save_Class.Instance.SC_DEMEURANT_employer   = bunifuTextBox7.Text.ToUpper();
+            Save_Class.Instance.SC_ENGAGEMENT_employer  = bunifuTextBox8.Text.ToUpper();
+            Save_Class.Instance.SC_DUREE_employer       = bunifuTextBox9.Text.ToUpper();
+            Save_Class.Instance.SC_ENTREE_employer      = bunifuTextBox10.Text + "/" + bunifuTextBox11.Text + "/" + bunifuTextBox12.Text;
 
-            Save_Class.Instance.SC_SORTIE_employer = bunifuTextBox13.Text + "/" + bunifuTextBox14.Text + "/" + bunifuTextBox15.Text;
-            Save_Class.Instance.SC_CHANTIER_employer = bunifuTextBox16.Text.ToUpper();
-            Save_Class.Instance.SC_SALAIRE_employer = bunifuTextBox17.Text;
-            Save_Class.Instance.SC_NMR_ASSU_employer = bunifuTextBox21.Text.ToUpper();
-            Save_Class.Instance.SC_SITUATION_F_employer = Chek_single(bunifuTextBox27.Text);
-            Save_Class.Instance.SC_NBR_ENF_employer = bunifuTextBox28.Text.ToUpper();
-            Save_Class.Instance.SC_NMR_ADH_employer = "";// bunifuTextBox9.Text.ToUpper();
-            Save_Class.Instance.SC_GR_S_employer = bunifuTextBox20.Text;
+            Save_Class.Instance.SC_SORTIE_employer      = bunifuTextBox13.Text + "/" + bunifuTextBox14.Text + "/" + bunifuTextBox15.Text;
+            Save_Class.Instance.SC_CHANTIER_employer    = bunifuTextBox16.Text.ToUpper();
+            Save_Class.Instance.SC_SALAIRE_employer     = bunifuTextBox17.Text;
+            Save_Class.Instance.SC_NMR_ASSU_employer     = bunifuTextBox21.Text.ToUpper();
+            Save_Class.Instance.SC_SITUATION_F_employer  = Chek_single(bunifuTextBox27.Text);
+            Save_Class.Instance.SC_NBR_ENF_employer       = bunifuTextBox28.Text.ToUpper();
+            Save_Class.Instance.SC_NMR_ADH_employer          = "";// bunifuTextBox9.Text.ToUpper();
+            Save_Class.Instance.SC_GR_S_employer           = bunifuTextBox20.Text;
 
-            Save_Class.Instance.SC_TELEPH_employer = bunifuTextBox18.Text;
-            Save_Class.Instance.SC_EMAIL__employer = bunifuTextBox19.Text.ToUpper();
-            Save_Class.Instance.SC_SINF__employer = bunifuTextBox17.Text;
-            Save_Class.Instance.SC_ETAT_CONTR_employer = bunifuTextBox21.Text.ToUpper();
-            Save_Class.Instance.SC_CONTRAT_TYPE_employer = var_type_contrat.ToUpper();
-            Save_Class.Instance.SC_DATE_REAL_employer = bunifuTextBox28.Text.ToUpper();
-            Save_Class.Instance.SC_IMG_employer = empty_image(var_employe_image_path);
-            Save_Class.Instance.SC_GENDER_employer = var_employe_gendre;
+            Save_Class.Instance.SC_TELEPH_employer              = bunifuTextBox18.Text;
+            Save_Class.Instance.SC_EMAIL__employer           = bunifuTextBox19.Text.ToUpper();
+            Save_Class.Instance.SC_SINF__employer              = bunifuTextBox17.Text;
+            Save_Class.Instance.SC_ETAT_CONTR_employer       = bunifuTextBox21.Text.ToUpper();
+            Save_Class.Instance.SC_CONTRAT_TYPE_employer     = var_type_contrat.ToUpper();
+            Save_Class.Instance.SC_DATE_REAL_employer        = bunifuTextBox28.Text.ToUpper();
+            Save_Class.Instance.SC_IMG_employer              = empty_image(var_employe_image_path);
+            Save_Class.Instance.SC_GENDER_employer            = var_employe_gendre;
+            
+
 
 
 
@@ -633,6 +635,8 @@ namespace ATLASSPA
 
 
         }
+
+
         static string Chek_single(string situationf)
         {
             string st = null;
@@ -650,6 +654,7 @@ namespace ATLASSPA
         }
         static string empty_image(string image_path)
         {
+            MemoryStream ms = new MemoryStream();
             string image_path_gen = "";
             if (image_path == "no_image")
             {
@@ -658,13 +663,20 @@ namespace ATLASSPA
                 image_blanc.Save(tmp_path + @"blanc_imge.jpg");
                 //string i_path = new Uri(tmp_path + "blanc_imge.jpg").AbsoluteUri;
                 image_path_gen = tmp_path + @"blanc_imge.jpg";
+                
+
             }
             else
             {
                 image_path_gen = image_path;
+                //Image uploaded6 = Image.FromFile(image_path_gen);
+                //uploaded6.Save(ms, uploaded6.RawFormat);
+
+
             }
             return image_path_gen;
         }
+
         private void Save_notification()
         {
             //§§§§§§§pnlnot un4 = new pnlnot();
@@ -695,9 +707,9 @@ namespace ATLASSPA
             int RANBO2 = RND.Next(eengag.Length);
             int RANBO3 = RND.Next(ddureee.Length);
             int RANBO4 = RND.Next(situ_arr.Length);
+            bunifuTextBox1.Text = Faker.NameFaker.LastName();
 
-            bunifuTextBox1.Text = Faker.NameFaker.FirstName();
-            bunifuTextBox2.Text = Faker.NameFaker.LastName();
+            bunifuTextBox2.Text = Faker.NameFaker.FirstName();
             bunifuTextBox3.Text = RND.Next(1, 31).ToString();
             bunifuTextBox4.Text = RND.Next(1, 12).ToString();
             bunifuTextBox5.Text = RND.Next(1960, 1992).ToString();

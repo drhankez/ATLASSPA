@@ -32,6 +32,8 @@ namespace ATLASSPA
         public string SC_DATE_REAL_employer { get; set; }
         public string SC_IMG_employer { get; set; }
         public string SC_GENDER_employer { get; set; }
+        //
+        public byte[] SC_IMG_employer_byteArray { get; set; }
 
     }
 }

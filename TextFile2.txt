@@ -624,3 +624,40 @@ namespace ATLASSPA
         }
     }
 }
+
+
+
+
+
+
+            Label1.Text = Save_Class.Instance.SC_NOM_employer.ToString();
+            bunifuLabel1.Text=
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =
+            bunifuLabel1.Text =

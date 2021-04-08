@@ -83,6 +83,16 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_about {
+            get {
+                object obj = ResourceManager.GetObject("icons8_about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_back_to {
             get {
                 object obj = ResourceManager.GetObject("icons8_back_to", resourceCulture);
@@ -193,6 +203,26 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cell_phone {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cell_phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cell_phone_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_cell_phone_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_compose {
             get {
                 object obj = ResourceManager.GetObject("icons8_compose", resourceCulture);
@@ -216,6 +246,46 @@ namespace ATLASSPA.Properties {
         internal static System.Drawing.Bitmap icons8_compose_96px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_compose_96px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_property {
+            get {
+                object obj = ResourceManager.GetObject("icons8_edit_property", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_property_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_edit_property_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_email {
+            get {
+                object obj = ResourceManager.GetObject("icons8_email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_email_sign {
+            get {
+                object obj = ResourceManager.GetObject("icons8_email_sign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +383,39 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_phone_message {
+            get {
+                object obj = ResourceManager.GetObject("icons8_phone_message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_print {
             get {
                 object obj = ResourceManager.GetObject("icons8_print", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_reply {
+            get {
+                object obj = ResourceManager.GetObject("icons8_reply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_reply_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_reply_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

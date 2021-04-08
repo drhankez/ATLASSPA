@@ -39,22 +39,12 @@ namespace ATLASSPA
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var form1 = new Home_Page();
-            form1.Closed += (s, args) => this.Close();
-            form1.Show();
+
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            if (System.Windows.Forms.Application.MessageLoop)
-            {
-                System.Windows.Forms.Application.Exit();
-            }
-            else
-            {
-                System.Environment.Exit(1);
-            }
+
         }
 
         private void BunifuTextBox1_KeyDown(object sender, KeyEventArgs e)
@@ -291,6 +281,26 @@ namespace ATLASSPA
             {
                 MessageBox.Show("F1 pressed");
             }
+        }
+
+        private void BunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            if (System.Windows.Forms.Application.MessageLoop)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
+            else
+            {
+                System.Environment.Exit(1);
+            }
+        }
+
+        private void BunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form1 = new Home_Page();
+            form1.Closed += (s, args) => this.Close();
+            form1.Show();
         }
     }
 }
