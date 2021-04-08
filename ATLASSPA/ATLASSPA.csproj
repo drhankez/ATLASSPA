@@ -561,6 +561,7 @@
     <None Include="Resources\icons8_email.ico" />
     <None Include="Resources\icons8_email_sign.ico" />
     <None Include="Resources\icons8_phone_message.ico" />
+    <None Include="Resources\icons8_drop_of_blood.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -50,7 +50,7 @@ namespace ATLASSPA
             label22.Text = Save_Class.Instance.SC_ETAT_CONTR_employer;
             label23.Text = Save_Class.Instance.SC_CONTRAT_TYPE_employer;
             //label24.Text = Save_Class.Instance.SC_DATE_REAL_employer;
-            label24.Text = Save_Class.Instance.SC_IMG_employer;
+            //label24.Text = Save_Class.Instance.SC_IMG_employer;
             //label26.Text = Save_Class.Instance.SC_GENDER_employer;
             string[] d0dr0contrat0arr = Save_Class.Instance.SC_DUREE_employer.Split('@');
             string[] engagement0arr = Save_Class.Instance.SC_ENGAGEMENT_employer.Split('@');
