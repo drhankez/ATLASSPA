@@ -23,8 +23,10 @@ namespace ATLASSPA
             bunifuDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             INDEX_SEARCH_FILL index_search_fill = new INDEX_SEARCH_FILL();
-            bunifuLabel1.Text = Save_Class.Instance.SC_id_employer.ToString();
+            //bunifuLabel1.Text = Save_Class.Instance.SC_id_employer.ToString();
             index_search_fill.SRCH_INDEX(search_index);
+            guna2CircleButton1.Text = Save_Class.Instance.SC_id_employer.ToString();
+
             //label1.Text = Save_Class.Instance.SC_NOM_employer.ToString();
             label1.Text = Save_Class.Instance.SC_NOM_employer;
             label2.Text = Save_Class.Instance.SC_PNOM_employer;

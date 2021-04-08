@@ -63,7 +63,7 @@ namespace ATLASSPA
 
         private void Timer100_Tick(object sender, EventArgs e)
         {
-             gtran1.ShowSync(PnlContainer_employee);
+            gtran1.ShowSync(PnlContainer_employee);
             //bunifuTransition1.ShowSync(panel3);
             gtran1.WaitAllAnimations();
 
@@ -83,15 +83,23 @@ namespace ATLASSPA
 
         private void BunifuButton2_Click(object sender, EventArgs e)
         {
-            gtran1.HideSync(PnlContainer_employee);
+            //gtran1.HideSync(PnlContainer_employee);
             //bunifuTransition1.ShowSync(panel3);
-            gtran1.WaitAllAnimations();
+            //gtran1.WaitAllAnimations();
+            //PnlContainer_employee.Controls.Clear();
+            gtran1.HideSync(PnlContainer_employee);
+            _obj = this;
             PnlContainer_employee.Controls.Clear();
+            UC_P2 un = new UC_P2();
+            un.Dock = DockStyle.Fill;
+            PnlContainer_employee.Controls.Add(un);
+            timer100.Enabled = true;
         }
 
         private void BunifuButton1_Click(object sender, EventArgs e)
         {
             _obj = this;
+            gtran1.HideSync(PnlContainer_employee);
             PnlContainer_employee.Controls.Clear();
             UC_P1 un = new UC_P1();
             un.Dock = DockStyle.Fill;
@@ -99,6 +107,9 @@ namespace ATLASSPA
             timer100.Enabled = true;
         }
 
+        private void BunifuButton3_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

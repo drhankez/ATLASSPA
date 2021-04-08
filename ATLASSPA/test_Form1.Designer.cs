@@ -47,6 +47,8 @@
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mODIFIERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.bunifuGradientPanel5 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.top_bar_pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -234,12 +236,46 @@
             this.mODIFIERToolStripMenuItem.Size = new System.Drawing.Size(93, 68);
             this.mODIFIERToolStripMenuItem.Text = "MODIFIER";
             // 
+            // bunifuGradientPanel5
+            // 
+            this.bunifuGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel5.BackgroundImage")));
+            this.bunifuGradientPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel5.BorderRadius = 20;
+            this.bunifuGradientPanel5.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(72)))), ((int)(((byte)(220)))));
+            this.bunifuGradientPanel5.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(87)))), ((int)(((byte)(251)))));
+            this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(136)))), ((int)(((byte)(220)))));
+            this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(72)))), ((int)(((byte)(220)))));
+            this.bunifuGradientPanel5.Location = new System.Drawing.Point(455, 178);
+            this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
+            this.bunifuGradientPanel5.Quality = 10;
+            this.bunifuGradientPanel5.Size = new System.Drawing.Size(360, 135);
+            this.bunifuGradientPanel5.TabIndex = 548;
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(13)))), ((int)(((byte)(134)))));
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(65)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(15)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(85)))), ((int)(((byte)(178)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(130, 361);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(717, 27);
+            this.bunifuGradientPanel1.TabIndex = 549;
+            // 
             // test_Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1271, 491);
+            this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.bunifuGradientPanel5);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.bunifuLabel100);
             this.Controls.Add(this.bunifuLabel1);
@@ -279,5 +315,7 @@
         private System.Windows.Forms.ToolStripMenuItem cToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel5;
+        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
     }
 }

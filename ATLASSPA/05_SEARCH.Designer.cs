@@ -107,12 +107,12 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.guna2Transition1.SetDecoration(this.bunifuLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F);
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel1.Location = new System.Drawing.Point(161, 19);
+            this.bunifuLabel1.Location = new System.Drawing.Point(220, 16);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(24, 15);
+            this.bunifuLabel1.Size = new System.Drawing.Size(40, 18);
             this.bunifuLabel1.TabIndex = 85;
             this.bunifuLabel1.Text = "1094";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -125,12 +125,12 @@
             this.bunifuLabel20.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel20.CursorType = System.Windows.Forms.Cursors.Default;
             this.guna2Transition1.SetDecoration(this.bunifuLabel20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuLabel20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel20.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F);
             this.bunifuLabel20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuLabel20.Location = new System.Drawing.Point(13, 61);
             this.bunifuLabel20.Name = "bunifuLabel20";
             this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel20.Size = new System.Drawing.Size(69, 15);
+            this.bunifuLabel20.Size = new System.Drawing.Size(102, 18);
             this.bunifuLabel20.TabIndex = 86;
             this.bunifuLabel20.Text = "bunifuLabel2";
             this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -143,12 +143,12 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.guna2Transition1.SetDecoration(this.bunifuLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F);
             this.bunifuLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuLabel2.Location = new System.Drawing.Point(13, 40);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(99, 15);
+            this.bunifuLabel2.Size = new System.Drawing.Size(139, 18);
             this.bunifuLabel2.TabIndex = 87;
             this.bunifuLabel2.Text = "Type Of Recherche";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -161,12 +161,12 @@
             this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.guna2Transition1.SetDecoration(this.bunifuLabel5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel5.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel5.Location = new System.Drawing.Point(13, 19);
+            this.bunifuLabel5.Location = new System.Drawing.Point(13, 16);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(132, 15);
+            this.bunifuLabel5.Size = new System.Drawing.Size(185, 18);
             this.bunifuLabel5.TabIndex = 89;
             this.bunifuLabel5.Text = "Count Of Results Found :";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -181,7 +181,7 @@
             this.guna2Transition1.SetDecoration(this.bunifuLabel6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel6.Location = new System.Drawing.Point(232, 12);
+            this.bunifuLabel6.Location = new System.Drawing.Point(307, 61);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(69, 15);
@@ -199,7 +199,7 @@
             this.guna2Transition1.SetDecoration(this.bunifuLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel7.Location = new System.Drawing.Point(232, 33);
+            this.bunifuLabel7.Location = new System.Drawing.Point(410, 61);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(69, 15);
@@ -216,7 +216,7 @@
             this.guna2Transition1.SetDecoration(this.bunifuLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuLabel8.Location = new System.Drawing.Point(232, 54);
+            this.bunifuLabel8.Location = new System.Drawing.Point(232, 61);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(69, 15);
@@ -332,7 +332,7 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(399, 31);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(24, 113);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -489,7 +489,7 @@
             this.guna2Transition1.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.Indigo;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(65)))), ((int)(((byte)(138)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(399, 81);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(710, 81);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(538, 96);
@@ -505,7 +505,7 @@
             // 
             // bunifuColorTransition1
             // 
-            this.bunifuColorTransition1.AutoTransition = true;
+            this.bunifuColorTransition1.AutoTransition = false;
             this.bunifuColorTransition1.ColorArray = new System.Drawing.Color[] {
         System.Drawing.Color.Purple,
         System.Drawing.Color.LightBlue,

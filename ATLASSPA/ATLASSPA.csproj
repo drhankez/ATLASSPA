@@ -371,6 +371,12 @@
     <Compile Include="UC_P1.Designer.cs">
       <DependentUpon>UC_P1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_P2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_P2.Designer.cs">
+      <DependentUpon>UC_P2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update_Class.cs" />
     <Compile Include="UC2.cs">
       <SubType>UserControl</SubType>
@@ -453,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_P1.resx">
       <DependentUpon>UC_P1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_P2.resx">
+      <DependentUpon>UC_P2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_REPORT.resx">
       <DependentUpon>UC_REPORT.cs</DependentUpon>
@@ -566,6 +575,8 @@
     <None Include="Resources\icons8_phone_message.ico" />
     <None Include="Resources\icons8_drop_of_blood.ico" />
     <None Include="Resources\icons8_contacts.ico" />
+    <None Include="Resources\ccc.png" />
+    <None Include="Resources\ccc1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
