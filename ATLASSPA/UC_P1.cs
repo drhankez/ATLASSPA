@@ -92,5 +92,20 @@ namespace ATLASSPA
                 populate1(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString().Split('@').Last(), row[7].ToString().Split('@').Last(), row[8].ToString().Split('@').Last(), row[9].ToString().Split('@').Last(), row[10].ToString().Split('@').Last(), row[11].ToString().Split('@').Last(), row[12].ToString(), row[13].ToString(), row[14].ToString(), row[15].ToString(), row[16].ToString(), row[17].ToString(), row[18].ToString(), row[18].ToString());
             }*/
         }
+
+        private void Guna2Button1_Click(object sender, EventArgs e)
+        {
+            if(contract_panel.Visible == true)
+            {
+                contract_panel.Visible = false;
+            }
+            else
+            {
+                contract_panel.Visible = true;
+            }
+            
+        }
+
+
     }
 }
