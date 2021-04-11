@@ -563,6 +563,16 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Purple_Icon_Clip_Art_Purple_Circle_Transparent_Background_ {
+            get {
+                object obj = ResourceManager.GetObject("Purple-Icon-Clip-Art-Purple-Circle-Transparent-Background-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stunning_animated_gifs_01 {
             get {
                 object obj = ResourceManager.GetObject("stunning_animated_gifs_01", resourceCulture);

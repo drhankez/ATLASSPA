@@ -279,7 +279,7 @@ namespace ATLASSPA
             this.bunifuDataGridView1.Columns.Add("CONTRAT_TYPE", "2");
             this.bunifuDataGridView1.Columns.Add("DATE_REAL", "3");
             this.bunifuDataGridView1.Columns.Add("IMG", "4");
-            this.bunifuDataGridView1.Columns.Add("GENDER", "5");
+            this.bunifuDataGridView1.Columns.Add("GENDER", "GENDERGENDER");
             bunifuDataGridView1.ClearSelection();
 
             //stylelistview();

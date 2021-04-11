@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -9,11 +10,6 @@ namespace ATLASSPA
         public UC_P1()
         {
             InitializeComponent();
-
-
-
-
-
         }
 
         private void UC_P1_Load(object sender, System.EventArgs e)
@@ -33,14 +29,14 @@ namespace ATLASSPA
             label3.Text = Save_Class.Instance.SC_DATE_N_employer;
             label4.Text = Save_Class.Instance.SC_LIEU_N_employer;
             label5.Text = Save_Class.Instance.SC_DEMEURANT_employer;
-            label6.Text = Save_Class.Instance.SC_ENGAGEMENT_employer;
-            label7.Text = Save_Class.Instance.SC_DUREE_employer;
-            label8.Text = Save_Class.Instance.SC_ENTREE_employer;
+            label6.Text = Save_Class.Instance.SC_ENGAGEMENT_employer.Split('@').Last();
+            label7.Text = Save_Class.Instance.SC_DUREE_employer.Split('@').Last();
+            label8.Text = Save_Class.Instance.SC_ENTREE_employer.Split('@').Last();
             //label9.Text =;
-            label10.Text = Save_Class.Instance.SC_SORTIE_employer;
-            label11.Text = Save_Class.Instance.SC_CHANTIER_employer;
-            label12.Text = Save_Class.Instance.SC_SALAIRE_employer;
-            label13.Text = Save_Class.Instance.SC_NMR_ASSU_employer;
+            label10.Text = Save_Class.Instance.SC_SORTIE_employer.Split('@').Last();
+            label11.Text = Save_Class.Instance.SC_CHANTIER_employer.Split('@').Last();
+            label12.Text = Save_Class.Instance.SC_SALAIRE_employer.Split('@').Last()+ " DA";
+            label13.Text = Save_Class.Instance.SC_NMR_ASSU_employer.Substring(0, 10);
             label14.Text = Save_Class.Instance.SC_SITUATION_F_employer;
             label15.Text = Save_Class.Instance.SC_NBR_ENF_employer;
             label16.Text = Save_Class.Instance.SC_NMR_ADH_employer;
@@ -50,7 +46,7 @@ namespace ATLASSPA
             label20.Text = Save_Class.Instance.SC_EMAIL__employer;
             label21.Text = Save_Class.Instance.SC_SINF__employer;
             label22.Text = Save_Class.Instance.SC_ETAT_CONTR_employer;
-            label23.Text = Save_Class.Instance.SC_CONTRAT_TYPE_employer;
+            label28.Text = Save_Class.Instance.SC_NMR_ASSU_employer.Substring(Save_Class.Instance.SC_NMR_ASSU_employer.Length - 2);//Save_Class.Instance.SC_NMR_ASSU_employer.Substring(0, 10); //Segoe UI Black; 9,75pt; style=BoldSave_Class.Instance.SC_CONTRAT_TYPE_employer;
             //label24.Text = Save_Class.Instance.SC_DATE_REAL_employer;
             //label24.Text = Save_Class.Instance.SC_IMG_employer;
             //label26.Text = Save_Class.Instance.SC_GENDER_employer;
@@ -68,14 +64,8 @@ namespace ATLASSPA
                 //MessageBox.Show(i.ToString());
                 populate1(i.ToString(), engagement0arr[i].ToString(), d0dr0contrat0arr[i].ToString(), ENTREEt0arr[i].ToString(), SORTIE0arr[i].ToString(), CHANTIERE0arr[i].ToString(), SALAIRE0arr[i].ToString()+" DA");
             }
-            //bunifuDataGridView1.Columns[0].Width = 55;
-         //   bunifuDataGridView1.Columns[1].AutoSizeMode =DataGridViewAutoSizeColumnMode.Fill;
-          //  bunifuDataGridView1.Columns[2].FillWeight = 30;
             bunifuDataGridView1.Columns["Chantier"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-          //  bunifuDataGridView1.Columns[4].FillWeight = 20;
 
-            //bunifuDataGridView1.Columns[0].Width = 180;
-            //bunifuDataGridView1.Columns.Item("N").Width = 160;
         }
         private void populate1(string NN, string EG, string DRE, string EMB, string SRT, string CHNT, string SALR)
         {

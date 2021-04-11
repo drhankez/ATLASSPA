@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.OleDb;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ATLASSPA
 {
@@ -23,40 +18,41 @@ namespace ATLASSPA
 
             {
                 using (OleDbCommand cmd = new OleDbCommand(SqlString, conn))
-                    
+
 
                 {
                     conn.Open();
                     OleDbDataReader reader = cmd.ExecuteReader();
-                    
+
 
                     if (reader.Read())
                     {
-                        Save_Class.Instance.SC_NOM_employer         = reader["NOM"].ToString();
-                        Save_Class.Instance.SC_PNOM_employer        = reader["PNOM"].ToString();
-                        Save_Class.Instance.SC_DATE_N_employer      = reader["DATE_N"].ToString();
-                        Save_Class.Instance.SC_LIEU_N_employer      = reader["LIEU_N"].ToString();
-                        Save_Class.Instance.SC_DEMEURANT_employer   = reader["DEMEURANT"].ToString();
-                        Save_Class.Instance.SC_ENGAGEMENT_employer  = reader["ENGAGEMENT"].ToString();
-                        Save_Class.Instance.SC_DUREE_employer       = reader["DUREE"].ToString();
-                        Save_Class.Instance.SC_ENTREE_employer      = reader["ENTREE"].ToString();
-                        Save_Class.Instance.SC_SORTIE_employer      = reader["SORTIE"].ToString();
-                        Save_Class.Instance.SC_CHANTIER_employer    = reader["CHANTIER"].ToString();
-                        Save_Class.Instance.SC_SALAIRE_employer     = reader["SALAIRE"].ToString();
-                        Save_Class.Instance.SC_NMR_ASSU_employer    = reader["NMR_ASSU"].ToString();
+                        Save_Class.Instance.SC_NOM_employer = reader["id"].ToString();
+                        Save_Class.Instance.SC_NOM_employer = reader["NOM"].ToString();
+                        Save_Class.Instance.SC_PNOM_employer = reader["PNOM"].ToString();
+                        Save_Class.Instance.SC_DATE_N_employer = reader["DATE_N"].ToString();
+                        Save_Class.Instance.SC_LIEU_N_employer = reader["LIEU_N"].ToString();
+                        Save_Class.Instance.SC_DEMEURANT_employer = reader["DEMEURANT"].ToString();
+                        Save_Class.Instance.SC_ENGAGEMENT_employer = reader["ENGAGEMENT"].ToString();
+                        Save_Class.Instance.SC_DUREE_employer = reader["DUREE"].ToString();
+                        Save_Class.Instance.SC_ENTREE_employer = reader["ENTREE"].ToString();
+                        Save_Class.Instance.SC_SORTIE_employer = reader["SORTIE"].ToString();
+                        Save_Class.Instance.SC_CHANTIER_employer = reader["CHANTIER"].ToString();
+                        Save_Class.Instance.SC_SALAIRE_employer = reader["SALAIRE"].ToString();
+                        Save_Class.Instance.SC_NMR_ASSU_employer = reader["NMR_ASSU"].ToString();
                         Save_Class.Instance.SC_SITUATION_F_employer = reader["SITUATION_F"].ToString();
-                        Save_Class.Instance.SC_NBR_ENF_employer     = reader["NBR_ENF"].ToString();
-                        Save_Class.Instance.SC_NMR_ADH_employer     = reader["NMR_ADH"].ToString();
-                        Save_Class.Instance.SC_GR_S_employer        = reader["GR_S"].ToString();
-                        Save_Class.Instance.SC_TELEPH_employer      = reader["TELEPH"].ToString();
-                        Save_Class.Instance.SC_EMAIL__employer      = reader["EMAIL_"].ToString();
-                        Save_Class.Instance.SC_SINF__employer       = reader["SINF_"].ToString();
-                        Save_Class.Instance.SC_ETAT_CONTR_employer  = reader["ETAT_CONTR"].ToString();
-                        Save_Class.Instance.SC_CONTRAT_TYPE_employer= reader["CONTRAT_TYPE"].ToString();
-                        Save_Class.Instance.SC_DATE_REAL_employer   = reader["DATE_REAL"].ToString();
-                        Save_Class.Instance.SC_IMG_employer         = reader["IMG"].ToString();
+                        Save_Class.Instance.SC_NBR_ENF_employer = reader["NBR_ENF"].ToString();
+                        Save_Class.Instance.SC_NMR_ADH_employer = reader["NMR_ADH"].ToString();
+                        Save_Class.Instance.SC_GR_S_employer = reader["GR_S"].ToString();
+                        Save_Class.Instance.SC_TELEPH_employer = reader["TELEPH"].ToString();
+                        Save_Class.Instance.SC_EMAIL__employer = reader["EMAIL_"].ToString();
+                        Save_Class.Instance.SC_SINF__employer = reader["SINF_"].ToString();
+                        Save_Class.Instance.SC_ETAT_CONTR_employer = reader["ETAT_CONTR"].ToString();
+                        Save_Class.Instance.SC_CONTRAT_TYPE_employer = reader["CONTRAT_TYPE"].ToString();
+                        Save_Class.Instance.SC_DATE_REAL_employer = reader["DATE_REAL"].ToString();
+                        Save_Class.Instance.SC_IMG_employer = reader["IMG"].ToString();
                         Save_Class.Instance.SC_IMG_employer_byteArray = (byte[])reader["IMG"];
-                        Save_Class.Instance.SC_GENDER_employer      = reader["PNOM"].ToString();
+                        Save_Class.Instance.SC_GENDER_employer = reader["GENDER"].ToString();
                         //= reader["PNOM"].ToString();
                         //= reader["PNOM"].ToString();
                     }
@@ -103,11 +99,6 @@ namespace ATLASSPA
                 }
 
             }
-
-
-
-
-
             //NOTIFICATI0N ntf = new NOTIFICATI0N();
             //ntf.showAlert("hi", NOTIFICATI0N.enmType.Success);
             //Save_notification();

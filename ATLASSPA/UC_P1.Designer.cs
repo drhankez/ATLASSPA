@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_P1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_P1));
             this.metroStyleExtender1 = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label16 = new System.Windows.Forms.Label();
@@ -44,14 +44,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Engagement = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.a_partir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jusqua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Chantier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,12 +53,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label12 = new System.Windows.Forms.Label();
-            this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label20 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.contract_panel = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,27 +77,39 @@
             this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel24 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label19 = new System.Windows.Forms.Label();
-            this.bunifuGradientPanel7 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label9 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.guna2NotificationPaint1 = new Guna.UI2.WinForms.Guna2NotificationPaint(this.components);
             this.guna2NotificationPaint2 = new Guna.UI2.WinForms.Guna2NotificationPaint(this.components);
-            this.label27 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
-            this.contract_panel.SuspendLayout();
-            this.bunifuGradientPanel7.SuspendLayout();
-            this.bunifuGradientPanel3.SuspendLayout();
+            this.label28 = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel3 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.contract_panel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Engagement = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a_partir = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jusqua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chantier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuGradientPanel7 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel100.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.bunifuGradientPanel3.SuspendLayout();
+            this.contract_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            this.bunifuGradientPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -122,7 +123,7 @@
             this.guna2Transition1.SetDecoration(this.label16, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(386, 261);
+            this.label16.Location = new System.Drawing.Point(915, 215);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(48, 17);
             this.label16.TabIndex = 109;
@@ -146,7 +147,7 @@
             this.guna2Transition1.SetDecoration(this.label21, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(386, 289);
+            this.label21.Location = new System.Drawing.Point(901, 250);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(48, 17);
             this.label21.TabIndex = 114;
@@ -202,132 +203,8 @@
             // 
             // bunifuElipse2
             // 
-            this.bunifuElipse2.ElipseRadius = 18;
+            this.bunifuElipse2.ElipseRadius = 7;
             this.bunifuElipse2.TargetControl = this.bunifuDataGridView1;
-            // 
-            // bunifuDataGridView1
-            // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
-            this.bunifuDataGridView1.AllowUserToAddRows = false;
-            this.bunifuDataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.N,
-            this.Engagement,
-            this.Durée,
-            this.a_partir,
-            this.jusqua,
-            this.Chantier,
-            this.Salaire});
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Transition1.SetDecoration(this.bunifuDataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.ReadOnly = true;
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(1108, 237);
-            this.bunifuDataGridView1.TabIndex = 552;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
-            // 
-            // N
-            // 
-            this.N.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.N.FillWeight = 3.348678F;
-            this.N.HeaderText = "N";
-            this.N.Name = "N";
-            this.N.ReadOnly = true;
-            this.N.Width = 45;
-            // 
-            // Engagement
-            // 
-            this.Engagement.HeaderText = "Engagement";
-            this.Engagement.Name = "Engagement";
-            this.Engagement.ReadOnly = true;
-            // 
-            // Durée
-            // 
-            this.Durée.FillWeight = 14.38563F;
-            this.Durée.HeaderText = "Durée";
-            this.Durée.Name = "Durée";
-            this.Durée.ReadOnly = true;
-            // 
-            // a_partir
-            // 
-            this.a_partir.FillWeight = 8.505855F;
-            this.a_partir.HeaderText = "a partire de";
-            this.a_partir.MinimumWidth = 9;
-            this.a_partir.Name = "a_partir";
-            this.a_partir.ReadOnly = true;
-            // 
-            // jusqua
-            // 
-            this.jusqua.FillWeight = 9.332726F;
-            this.jusqua.HeaderText = "jusqua";
-            this.jusqua.MinimumWidth = 9;
-            this.jusqua.Name = "jusqua";
-            this.jusqua.ReadOnly = true;
-            // 
-            // Chantier
-            // 
-            this.Chantier.FillWeight = 14.38563F;
-            this.Chantier.HeaderText = "Chantier";
-            this.Chantier.Name = "Chantier";
-            this.Chantier.ReadOnly = true;
-            // 
-            // Salaire
-            // 
-            this.Salaire.FillWeight = 4F;
-            this.Salaire.HeaderText = "Salaire";
-            this.Salaire.Name = "Salaire";
-            this.Salaire.ReadOnly = true;
             // 
             // bunifuElipse3
             // 
@@ -378,11 +255,11 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(198)))), ((int)(((byte)(0)))));
             this.label8.Location = new System.Drawing.Point(24, 81);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.Size = new System.Drawing.Size(50, 19);
             this.label8.TabIndex = 101;
             this.label8.Text = "label8";
             // 
@@ -404,11 +281,11 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(25)))), ((int)(((byte)(22)))));
             this.label10.Location = new System.Drawing.Point(161, 81);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 17);
+            this.label10.Size = new System.Drawing.Size(57, 19);
             this.label10.TabIndex = 103;
             this.label10.Text = "label10";
             // 
@@ -437,30 +314,6 @@
             this.label12.Size = new System.Drawing.Size(52, 17);
             this.label12.TabIndex = 105;
             this.label12.Text = "label12";
-            // 
-            // bunifuCustomLabel18
-            // 
-            this.bunifuCustomLabel18.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.bunifuCustomLabel18.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel18.Location = new System.Drawing.Point(18, 6);
-            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
-            this.bunifuCustomLabel18.Size = new System.Drawing.Size(43, 17);
-            this.bunifuCustomLabel18.TabIndex = 534;
-            this.bunifuCustomLabel18.Text = "Email";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label20.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(73, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(46, 13);
-            this.label20.TabIndex = 113;
-            this.label20.Text = "label20";
             // 
             // bunifuCustomLabel10
             // 
@@ -506,23 +359,6 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
-            // 
-            // contract_panel
-            // 
-            this.contract_panel.BackgroundColor = System.Drawing.Color.Transparent;
-            this.contract_panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contract_panel.BackgroundImage")));
-            this.contract_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.contract_panel.BorderColor = System.Drawing.Color.Transparent;
-            this.contract_panel.BorderRadius = 22;
-            this.contract_panel.BorderThickness = 1;
-            this.contract_panel.Controls.Add(this.bunifuDataGridView1);
-            this.guna2Transition1.SetDecoration(this.contract_panel, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.contract_panel.Location = new System.Drawing.Point(10, 312);
-            this.contract_panel.Name = "contract_panel";
-            this.contract_panel.ShowBorders = true;
-            this.contract_panel.Size = new System.Drawing.Size(1108, 237);
-            this.contract_panel.TabIndex = 553;
-            this.contract_panel.Visible = false;
             // 
             // bunifuCustomLabel5
             // 
@@ -652,9 +488,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(166, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 17);
+            this.label13.Size = new System.Drawing.Size(88, 17);
             this.label13.TabIndex = 106;
-            this.label13.Text = "label13";
+            this.label13.Text = "0000000000";
             // 
             // bunifuCustomLabel25
             // 
@@ -722,7 +558,7 @@
             this.guna2Transition1.SetDecoration(this.bunifuCustomLabel20, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuCustomLabel20.Font = new System.Drawing.Font("Segoe UI Black", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.bunifuCustomLabel20.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel20.Location = new System.Drawing.Point(291, 8);
+            this.bunifuCustomLabel20.Location = new System.Drawing.Point(266, 8);
             this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
             this.bunifuCustomLabel20.Size = new System.Drawing.Size(26, 15);
             this.bunifuCustomLabel20.TabIndex = 539;
@@ -776,85 +612,6 @@
             this.label19.TabIndex = 112;
             this.label19.Text = "label19";
             // 
-            // bunifuGradientPanel7
-            // 
-            this.bunifuGradientPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
-            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel7.BorderRadius = 12;
-            this.bunifuGradientPanel7.Controls.Add(this.bunifuCustomLabel18);
-            this.bunifuGradientPanel7.Controls.Add(this.label20);
-            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
-            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
-            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
-            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel7.Location = new System.Drawing.Point(749, 20);
-            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
-            this.bunifuGradientPanel7.Quality = 10;
-            this.bunifuGradientPanel7.Size = new System.Drawing.Size(369, 33);
-            this.bunifuGradientPanel7.TabIndex = 549;
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(56, 5);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(91, 21);
-            this.bunifuCustomLabel7.TabIndex = 122;
-            this.bunifuCustomLabel7.Text = "Chantier : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(153, 5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 21);
-            this.label11.TabIndex = 104;
-            this.label11.Text = "label11";
-            // 
-            // bunifuGradientPanel3
-            // 
-            this.bunifuGradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.BorderRadius = 12;
-            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel3.Controls.Add(this.label11);
-            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(22, 20);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(688, 33);
-            this.bunifuGradientPanel3.TabIndex = 550;
-            // 
-            // guna2CircleButton1
-            // 
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2Transition1.SetDecoration(this.guna2CircleButton1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(10, 8);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(52, 52);
-            this.guna2CircleButton1.TabIndex = 557;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -890,6 +647,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.bunifuCustomLabel14);
@@ -937,7 +695,7 @@
             this.guna2Button1.Location = new System.Drawing.Point(10, 261);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(213, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(159, 45);
             this.guna2Button1.TabIndex = 563;
             this.guna2Button1.Text = "Tous Les  Contract";
             this.guna2Button1.Click += new System.EventHandler(this.Guna2Button1_Click);
@@ -966,6 +724,262 @@
             this.label27.TabIndex = 565;
             this.label27.Text = "Date D\'embauche";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label28, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label28.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(305, 6);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(24, 17);
+            this.label28.TabIndex = 566;
+            this.label28.Text = "00";
+            // 
+            // bunifuGradientPanel3
+            // 
+            this.bunifuGradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
+            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.BorderRadius = 12;
+            this.bunifuGradientPanel3.Controls.Add(this.bunifuCustomLabel7);
+            this.bunifuGradientPanel3.Controls.Add(this.label11);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(22, 20);
+            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
+            this.bunifuGradientPanel3.Quality = 10;
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(688, 33);
+            this.bunifuGradientPanel3.TabIndex = 550;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(56, 5);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(91, 21);
+            this.bunifuCustomLabel7.TabIndex = 122;
+            this.bunifuCustomLabel7.Text = "Chantier : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.label11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label11.Location = new System.Drawing.Point(153, 5);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 21);
+            this.label11.TabIndex = 104;
+            this.label11.Text = "label11";
+            // 
+            // contract_panel
+            // 
+            this.contract_panel.BackgroundColor = System.Drawing.Color.Transparent;
+            this.contract_panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contract_panel.BackgroundImage")));
+            this.contract_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.contract_panel.BorderColor = System.Drawing.Color.Transparent;
+            this.contract_panel.BorderRadius = 22;
+            this.contract_panel.BorderThickness = 1;
+            this.contract_panel.Controls.Add(this.bunifuDataGridView1);
+            this.guna2Transition1.SetDecoration(this.contract_panel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.contract_panel.Location = new System.Drawing.Point(10, 312);
+            this.contract_panel.Name = "contract_panel";
+            this.contract_panel.ShowBorders = true;
+            this.contract_panel.Size = new System.Drawing.Size(1108, 237);
+            this.contract_panel.TabIndex = 553;
+            this.contract_panel.Visible = false;
+            // 
+            // bunifuDataGridView1
+            // 
+            this.bunifuDataGridView1.AllowCustomTheming = false;
+            this.bunifuDataGridView1.AllowUserToAddRows = false;
+            this.bunifuDataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
+            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.N,
+            this.Engagement,
+            this.Durée,
+            this.a_partir,
+            this.jusqua,
+            this.Chantier,
+            this.Salaire});
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.Name = null;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Transition1.SetDecoration(this.bunifuDataGridView1, Guna.UI2.AnimatorNS.DecorationType.None);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            this.bunifuDataGridView1.ReadOnly = true;
+            this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.bunifuDataGridView1.RowTemplate.Height = 40;
+            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(1108, 237);
+            this.bunifuDataGridView1.TabIndex = 552;
+            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            // 
+            // N
+            // 
+            this.N.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.N.FillWeight = 3.348678F;
+            this.N.HeaderText = "N";
+            this.N.Name = "N";
+            this.N.ReadOnly = true;
+            this.N.Width = 45;
+            // 
+            // Engagement
+            // 
+            this.Engagement.HeaderText = "Engagement";
+            this.Engagement.Name = "Engagement";
+            this.Engagement.ReadOnly = true;
+            // 
+            // Durée
+            // 
+            this.Durée.FillWeight = 14.38563F;
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            this.Durée.ReadOnly = true;
+            // 
+            // a_partir
+            // 
+            this.a_partir.FillWeight = 8.505855F;
+            this.a_partir.HeaderText = "a partire de";
+            this.a_partir.MinimumWidth = 9;
+            this.a_partir.Name = "a_partir";
+            this.a_partir.ReadOnly = true;
+            // 
+            // jusqua
+            // 
+            this.jusqua.FillWeight = 9.332726F;
+            this.jusqua.HeaderText = "jusqua";
+            this.jusqua.MinimumWidth = 9;
+            this.jusqua.Name = "jusqua";
+            this.jusqua.ReadOnly = true;
+            // 
+            // Chantier
+            // 
+            this.Chantier.FillWeight = 14.38563F;
+            this.Chantier.HeaderText = "Chantier";
+            this.Chantier.Name = "Chantier";
+            this.Chantier.ReadOnly = true;
+            // 
+            // Salaire
+            // 
+            this.Salaire.FillWeight = 4F;
+            this.Salaire.HeaderText = "Salaire";
+            this.Salaire.Name = "Salaire";
+            this.Salaire.ReadOnly = true;
+            // 
+            // bunifuGradientPanel7
+            // 
+            this.bunifuGradientPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel7.BackgroundImage")));
+            this.bunifuGradientPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel7.BorderRadius = 12;
+            this.bunifuGradientPanel7.Controls.Add(this.bunifuCustomLabel18);
+            this.bunifuGradientPanel7.Controls.Add(this.label20);
+            this.guna2Transition1.SetDecoration(this.bunifuGradientPanel7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuGradientPanel7.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(21)))), ((int)(((byte)(59)))));
+            this.bunifuGradientPanel7.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
+            this.bunifuGradientPanel7.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(25)))), ((int)(((byte)(150)))));
+            this.bunifuGradientPanel7.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(14)))), ((int)(((byte)(55)))));
+            this.bunifuGradientPanel7.Location = new System.Drawing.Point(749, 20);
+            this.bunifuGradientPanel7.Name = "bunifuGradientPanel7";
+            this.bunifuGradientPanel7.Quality = 10;
+            this.bunifuGradientPanel7.Size = new System.Drawing.Size(369, 33);
+            this.bunifuGradientPanel7.TabIndex = 549;
+            // 
+            // bunifuCustomLabel18
+            // 
+            this.bunifuCustomLabel18.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.bunifuCustomLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.bunifuCustomLabel18.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bunifuCustomLabel18.Location = new System.Drawing.Point(18, 6);
+            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
+            this.bunifuCustomLabel18.Size = new System.Drawing.Size(43, 17);
+            this.bunifuCustomLabel18.TabIndex = 534;
+            this.bunifuCustomLabel18.Text = "Email";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label20.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(73, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(46, 13);
+            this.label20.TabIndex = 113;
+            this.label20.Text = "label20";
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2Transition1.SetDecoration(this.guna2CircleButton1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(10, 8);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(52, 52);
+            this.guna2CircleButton1.TabIndex = 557;
+            // 
             // UC_P1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -993,18 +1007,18 @@
             this.Name = "UC_P1";
             this.Size = new System.Drawing.Size(1124, 572);
             this.Load += new System.EventHandler(this.UC_P1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
-            this.contract_panel.ResumeLayout(false);
-            this.bunifuGradientPanel7.ResumeLayout(false);
-            this.bunifuGradientPanel7.PerformLayout();
-            this.bunifuGradientPanel3.ResumeLayout(false);
-            this.bunifuGradientPanel3.PerformLayout();
             this.panel100.ResumeLayout(false);
             this.panel100.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.bunifuGradientPanel3.ResumeLayout(false);
+            this.bunifuGradientPanel3.PerformLayout();
+            this.contract_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            this.bunifuGradientPanel7.ResumeLayout(false);
+            this.bunifuGradientPanel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1070,7 +1084,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Salaire;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel3;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2NotificationPaint guna2NotificationPaint1;
         private Guna.UI2.WinForms.Guna2NotificationPaint guna2NotificationPaint2;
         private System.Windows.Forms.Label label9;
@@ -1080,5 +1093,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

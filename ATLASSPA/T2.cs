@@ -77,6 +77,7 @@ namespace ATLASSPA
             label1.Text = Save_Class.Instance.SC_TELEPH_employer;
             label3.Text = Save_Class.Instance.SC_NOM_employer;
             label4.Text = Save_Class.Instance.SC_PNOM_employer;
+            label2.Text = Save_Class.Instance.SC_GENDER_employer;
 
 
         }

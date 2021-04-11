@@ -4,6 +4,7 @@ using System.Data.OleDb;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -47,7 +48,7 @@ namespace ATLASSPA
 
         }
 
-        private void BunifuTextBox1_KeyDown(object sender, KeyEventArgs e)
+        private  void BunifuTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
             {
@@ -59,11 +60,14 @@ namespace ATLASSPA
             {
                 //guna2GradientPanel1.ShadowDecoration.Color = Color.AliceBlue;
                 guna2Transition1.HideSync(b2unifuDataGridView1);
-
+                Task<int> tsk = new Task<int>(SEARCH_IN_DB);
+                
                 Stopwatch sw;
                 sw = Stopwatch.StartNew();
                 SEARCH_IN_DB();
-                guna2Transition1.ShowSync(b2unifuDataGridView1);
+                //tsk.Start();
+                //int ss = await tsk;
+                guna2Transition1.Show(b2unifuDataGridView1);
 
 
             }
@@ -108,7 +112,7 @@ namespace ATLASSPA
             b2unifuDataGridView1.Rows.Add(row);
         }
 
-        private void SEARCH_IN_DB()
+        private int SEARCH_IN_DB()
         {
             try
             {
@@ -161,6 +165,8 @@ namespace ATLASSPA
             {
                 MessageBox.Show("REFRESH_SCROLLBAR" + ex.Message);
             }
+            int count_of_row_data = 0;
+            return count_of_row_data;
 
         }
 

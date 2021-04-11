@@ -226,6 +226,7 @@
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition387 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.bunifuCustomLabel26 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel100.SuspendLayout();
             this.panel200.SuspendLayout();
             this.panel300.SuspendLayout();
@@ -2653,6 +2654,7 @@
             // panel400
             // 
             this.panel400.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.panel400.Controls.Add(this.bunifuCustomLabel26);
             this.panel400.Controls.Add(this.bunifuButton5);
             this.panel400.Controls.Add(this.bunifuButton4);
             this.panel400.Controls.Add(this.bunifuCustomLabel23);
@@ -3586,6 +3588,19 @@
             this.bunifuTransition387.DefaultAnimation = animation2;
             this.bunifuTransition387.MaxAnimationTime = 15000;
             // 
+            // bunifuCustomLabel26
+            // 
+            this.bunifuCustomLabel26.AutoSize = true;
+            this.bunifuTransition10.SetDecoration(this.bunifuCustomLabel26, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition387.SetDecoration(this.bunifuCustomLabel26, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuCustomLabel26.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel26.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bunifuCustomLabel26.Location = new System.Drawing.Point(22, 174);
+            this.bunifuCustomLabel26.Name = "bunifuCustomLabel26";
+            this.bunifuCustomLabel26.Size = new System.Drawing.Size(39, 15);
+            this.bunifuCustomLabel26.TabIndex = 338;
+            this.bunifuCustomLabel26.Text = "tttttttt";
+            // 
             // UC1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3690,5 +3705,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
         private Bunifu.UI.WinForms.BunifuTransition bunifuTransition387;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel26;
     }
 }

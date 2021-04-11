@@ -299,6 +299,7 @@
     <Compile Include="05_SEARCH.Designer.cs">
       <DependentUpon>05_SEARCH.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class3.cs" />
     <Compile Include="CLS_MICROSOFT.cs" />
     <Compile Include="04_frm_SEARCH.cs">
       <SubType>Form</SubType>
@@ -577,6 +578,7 @@
     <None Include="Resources\icons8_contacts.ico" />
     <None Include="Resources\ccc.png" />
     <None Include="Resources\ccc1.png" />
+    <None Include="Resources\Purple-Icon-Clip-Art-Purple-Circle-Transparent-Background-.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

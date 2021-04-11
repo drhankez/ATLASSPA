@@ -3,6 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -546,7 +547,7 @@ namespace ATLASSPA
         {
 
 
-            bunifuCustomLabel23.Text = "collectted_data_ui";
+            //bunifuCustomLabel23.Text = "collectted_data_ui";
             //Update_Class cur_emply_obj = new Update_Class();
 
             //cur_emply_obj.O_NOM_employer = bunifuTextBox1.Text.ToUpper() ;
@@ -625,6 +626,7 @@ namespace ATLASSPA
             sw = Stopwatch.StartNew();
             collectted_data_ui();
             Save_notification();
+            //bunifuCustomLabel26.Text = var_employe_gendre;
             //NOTIFICATI0N ntf = new NOTIFICATI0N();
             //ntf.showAlert("hi", NOTIFICATI0N.enmType.Success);
             bunifuCustomLabel23.Text = bunifuCustomLabel23.Text + " time = " + sw.ElapsedMilliseconds;
@@ -677,7 +679,7 @@ namespace ATLASSPA
             return image_path_gen;
         }
 
-        private void Save_notification()
+        private async void Save_notification()
         {
             //§§§§§§§pnlnot un4 = new pnlnot();
             //§§§§§§un4.Dock = DockStyle.Fill;
@@ -685,7 +687,8 @@ namespace ATLASSPA
             //§§§§§§Add_Employer.Instance.pnlNOTIFICATOIN.Controls.Add(un4);
             //Add_Employer.
             CLS_MICROSOFT cls_micro = new CLS_MICROSOFT();
-            cls_micro.Access_save();
+           // cls_micro.Access_save();
+            cls_micro.Fakae_Access_save();
             //ààbunifuTransition387.ShowSync(Add_Employer.Instance.pnlNOTIFICATOIN);
 
         }
@@ -699,7 +702,7 @@ namespace ATLASSPA
 
 
         }
-        public void faker_gen()
+        public  void faker_gen()
         {
             Random RND = new Random();
             int RANBO = RND.Next(nnam.Length);
@@ -708,7 +711,6 @@ namespace ATLASSPA
             int RANBO3 = RND.Next(ddureee.Length);
             int RANBO4 = RND.Next(situ_arr.Length);
             bunifuTextBox1.Text = Faker.NameFaker.LastName();
-
             bunifuTextBox2.Text = Faker.NameFaker.FirstName();
             bunifuTextBox3.Text = RND.Next(1, 31).ToString();
             bunifuTextBox4.Text = RND.Next(1, 12).ToString();
@@ -734,18 +736,44 @@ namespace ATLASSPA
             bunifuTextBox25.Text = RND.Next(1, 99).ToString(); 
             bunifuTextBox27.Text = situ_arr[RANBO4];// "Célibataire";
             bunifuTextBox28.Text = RND.Next(1, 12).ToString();
-
+            
         }
-        private void BunifuButton5_Click(object sender, EventArgs e)
-        { 
-            for (int i = 0;i < 100; i++)
+        private int cc()
+        {
+            int ii = 0;
+            for (int i = 0; i < 100; i++)
+            {
+                //faker_gen();
+                collectted_data_ui();
+                Save_notification();
+                ii = i;
+
+            }
+            return ii;
+        }
+        private int vv()
+        {
+            int ii = 0;
+            for (int i = 0; i < 100; i++)
             {
                 faker_gen();
                 collectted_data_ui();
                 Save_notification();
+                ii = i;
 
             }
-            
+            return ii;
+        }
+        private async void BunifuButton5_Click(object sender, EventArgs e)
+        {
+            bunifuCustomLabel26.Text = "generating ........";
+
+            Task<int> tsk1 = new Task<int>(cc);
+            tsk1.Start();
+            int g = await tsk1;
+            //vv();
+            bunifuCustomLabel26.Text = g.ToString();
+
         }
     }
 }
