@@ -287,25 +287,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="03_Add_Employer.cs">
+    <Compile Include="A03_Add_Employer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="03_Add_Employer.Designer.cs">
-      <DependentUpon>03_Add_Employer.cs</DependentUpon>
+    <Compile Include="A03_Add_Employer.Designer.cs">
+      <DependentUpon>A03_Add_Employer.cs</DependentUpon>
     </Compile>
-    <Compile Include="05_SEARCH.cs">
+    <Compile Include="A05_SEARCH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="05_SEARCH.Designer.cs">
-      <DependentUpon>05_SEARCH.cs</DependentUpon>
+    <Compile Include="A05_SEARCH.Designer.cs">
+      <DependentUpon>A05_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A07_SEARCHcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A07_SEARCHcs.Designer.cs">
+      <DependentUpon>A07_SEARCHcs.cs</DependentUpon>
     </Compile>
     <Compile Include="Class3.cs" />
     <Compile Include="CLS_MICROSOFT.cs" />
-    <Compile Include="04_frm_SEARCH.cs">
+    <Compile Include="A04_frm_SEARCH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="04_frm_SEARCH.Designer.cs">
-      <DependentUpon>04_frm_SEARCH.cs</DependentUpon>
+    <Compile Include="A04_frm_SEARCH.Designer.cs">
+      <DependentUpon>A04_frm_SEARCH.cs</DependentUpon>
     </Compile>
     <Compile Include="EMPLOYER_PAN.cs">
       <SubType>Form</SubType>
@@ -326,18 +332,18 @@
     <Compile Include="NOTIFICATI0N.Designer.cs">
       <DependentUpon>NOTIFICATI0N.cs</DependentUpon>
     </Compile>
-    <Compile Include="06_Save_Class.cs" />
-    <Compile Include="02_Home_Page.cs">
+    <Compile Include="A06_Save_Class.cs" />
+    <Compile Include="A02_Home_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="02_Home_Page.Designer.cs">
-      <DependentUpon>02_Home_Page.cs</DependentUpon>
+    <Compile Include="A02_Home_Page.Designer.cs">
+      <DependentUpon>A02_Home_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="01_Login_Panel.cs">
+    <Compile Include="A01_Login_Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="01_Login_Panel.Designer.cs">
-      <DependentUpon>01_Login_Panel.cs</DependentUpon>
+    <Compile Include="A01_Login_Panel.Designer.cs">
+      <DependentUpon>A01_Login_Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -397,21 +403,24 @@
     <Compile Include="pnlnot.Designer.cs">
       <DependentUpon>pnlnot.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="03_Add_Employer.resx">
-      <DependentUpon>03_Add_Employer.cs</DependentUpon>
+    <EmbeddedResource Include="A03_Add_Employer.resx">
+      <DependentUpon>A03_Add_Employer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="04_frm_SEARCH.resx">
-      <DependentUpon>04_frm_SEARCH.cs</DependentUpon>
+    <EmbeddedResource Include="A04_frm_SEARCH.resx">
+      <DependentUpon>A04_frm_SEARCH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="02_Home_Page.resx">
-      <DependentUpon>02_Home_Page.cs</DependentUpon>
+    <EmbeddedResource Include="A02_Home_Page.resx">
+      <DependentUpon>A02_Home_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="01_Login_Panel.resx">
-      <DependentUpon>01_Login_Panel.cs</DependentUpon>
+    <EmbeddedResource Include="A01_Login_Panel.resx">
+      <DependentUpon>A01_Login_Panel.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="05_SEARCH.resx">
-      <DependentUpon>05_SEARCH.cs</DependentUpon>
+    <EmbeddedResource Include="A05_SEARCH.resx">
+      <DependentUpon>A05_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A07_SEARCHcs.resx">
+      <DependentUpon>A07_SEARCHcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EMPLOYER_PAN.resx">
       <DependentUpon>EMPLOYER_PAN.cs</DependentUpon>
