@@ -483,9 +483,29 @@ namespace ATLASSPA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_52px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_52px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_search_client_80px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_search_client_80px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_client_80px_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_client_80px_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +526,16 @@ namespace ATLASSPA.Properties {
         internal static System.Drawing.Bitmap icons8_search_property_24px {
             get {
                 object obj = ResourceManager.GetObject("icons8_search_property_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_property_24px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_property_24px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

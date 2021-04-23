@@ -588,6 +588,9 @@
     <None Include="Resources\ccc.png" />
     <None Include="Resources\ccc1.png" />
     <None Include="Resources\Purple-Icon-Clip-Art-Purple-Circle-Transparent-Background-.png" />
+    <None Include="Resources\icons8_search_client_80px_11.png" />
+    <None Include="Resources\icons8_search_property_24px1.png" />
+    <None Include="Resources\icons8_search_52px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ATLASSPA
@@ -14,14 +10,18 @@ namespace ATLASSPA
     public partial class A07_SEARCHcs : Form
     {
         static string conString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "\\ATLAS_DB.mdb";
-        public DataTable dtbl1=new DataTable();
+        static string cmd_string_type_search  = "";
+        public DataTable dtbl1 = new DataTable();
 
         public DataRow DataRow { get; private set; }
+
 
         public A07_SEARCHcs()
         {
             InitializeComponent();
             dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
+            this.dgv1.MouseWheel += new MouseEventHandler(Mousewheel);
+            getdata_BEST();
             // dgv1.AutoGenerateColumns = true;
             //dgv1_set_columns();
             /*dtbl1.Columns.Add("Nom");
@@ -46,7 +46,24 @@ namespace ATLASSPA
             dtbl1.Columns.Add("19Nom");*/
 
         }
+        private void Mousewheel(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (e.Delta > 0 && dgv1.FirstDisplayedScrollingRowIndex > 0)
+                {
+                    dgv1.FirstDisplayedScrollingRowIndex--;
+                }
+                else if (e.Delta < 0)
+                {
+                    dgv1.FirstDisplayedScrollingRowIndex++;
+                }
+            }
+            catch
+            {
 
+            }
+        }
         private void BunifuImageButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -114,11 +131,12 @@ namespace ATLASSPA
             {
 
             }
-            
+
             //dgv1.Rows.Add(row);
         }
 
-        private void dgv1_set_columns() {
+        private void dgv1_set_columns()
+        {
             dgv1.AutoGenerateColumns = false;
             dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //
@@ -126,6 +144,7 @@ namespace ATLASSPA
             //
             dgv1.Columns[0].HeaderCell.Value = "ID";
             dgv1.Columns[0].Width = 45;
+            dgv1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv1.Columns[1].HeaderCell.Value = "Nom";
             dgv1.Columns[1].Width = 120;
             //dgv1.Columns[1].Width = 120
@@ -139,14 +158,18 @@ namespace ATLASSPA
 
             dgv1.Columns[4].HeaderCell.Value = "ENGAGEMENT";
             dgv1.Columns[4].Width = 190;
+            dgv1.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv1.Columns[5].HeaderCell.Value = "CHANTIER";
-            dgv1.Columns[5].Width = 340;
+            dgv1.Columns[5].Width = 360;
 
             dgv1.Columns[6].HeaderCell.Value = "DUREE";
             dgv1.Columns[6].Width = 100;
-           //dgv1.Columns[3].Width = 90;
+            dgv1.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //dgv1.Columns[3].Width = 90;
             dgv1.Columns[7].Width = 90;
+            dgv1.Columns[7].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv1.Columns[8].Width = 90;
+            dgv1.Columns[8].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             //dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             /*dgv1.Columns[1].HeaderCell.Value = "Nom";
             dgv1.Columns[1].Width = 120;
@@ -165,7 +188,7 @@ namespace ATLASSPA
             {
                 using (OleDbConnection con = new OleDbConnection(conString))
                 {
-                    using (OleDbCommand cmd = new OleDbCommand("Select * FROM T_1 WHERE NOM LIKE '%" + SRCH_BTN.Text.Trim() + "%'", con))
+                    using (OleDbCommand cmd = new OleDbCommand("Select * FROM T_1 WHERE ENTREE LIKE '%" + SRCH_BTN.Text.Trim() + "%'", con))
                     {
                         cmd.CommandType = CommandType.Text;
                         using (OleDbDataAdapter sda = new OleDbDataAdapter(cmd))
@@ -175,13 +198,13 @@ namespace ATLASSPA
                                 sda.Fill(dds);
                                 //sda.Fill(dtbl1);
                                 int search_count = dds.Rows.Count;
-                                
+
                                 foreach (DataRow row in dds.Rows)
                                 {
                                     populate(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString().Split('@').Last(), row[7].ToString().Split('@').Last(), row[8].ToString().Split('@').Last(), row[9].ToString().Split('@').Last(), row[10].ToString().Split('@').Last(), row[11].ToString().Split('@').Last(), row[12].ToString(), row[13].ToString(), row[14].ToString(), row[15].ToString(), row[16].ToString(), row[17].ToString(), row[18].ToString(), row[18].ToString());
                                 }
 
-                                lbl_count.Text = search_count.ToString();
+                                lbl_counttt.Text = search_count.ToString();
                                 DataTable dds2 = new DataTable();
                                 dds2 = dtbl1.Copy();
 
@@ -209,11 +232,14 @@ namespace ATLASSPA
         }
         private void getdata_BEST()
         {
+            type_search();
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
             OleDbConnection con = new OleDbConnection(conString);
-            OleDbCommand cmd = new OleDbCommand("Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1", con);
+            OleDbCommand cmd = new OleDbCommand(type_search(), con);
             //OleDbCommand cmd = new OleDbCommand("Select * FROM T_1", con);
+            //OleDbCommand cmd = new OleDbCommand("Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1", con);
+
             try
             {
                 OleDbDataAdapter sda = new OleDbDataAdapter();
@@ -230,11 +256,14 @@ namespace ATLASSPA
                     row[8] = row[8].ToString().Split('@').Last();
                 }
                 dds2 = dt.Copy();
+                int search_count = dds2.Rows.Count;
+                lbl_counttt.Text = search_count.ToString();
                 BindingSource bsr = new BindingSource();
                 bsr.DataSource = dds2;
                 dgv1.DataSource = bsr;
                 //dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
                 dgv1_set_columns();
+                REFRESH_SCROLLBAR();
                 //sda.Update(dds2);
             }
             catch (Exception ex)
@@ -242,22 +271,130 @@ namespace ATLASSPA
                 MessageBox.Show(ex.Message);
             }
         }
+
+        string type_search()
+        {
+            string type_of_search = guna2ComboBox1.Text;
+
+            switch (type_of_search)
+            {
+                case "Nom":
+                    cmd_string_type_search = "Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1  WHERE NOM LIKE '%" + SRCH_BTN.Text.Trim() + "%'";
+                    break;
+                case "Prénom":
+                    cmd_string_type_search = "Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1  WHERE PNOM LIKE '%" + SRCH_BTN.Text.Trim() + "%'";
+                    break;
+                case "Engagement":
+                    cmd_string_type_search = "Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1  WHERE ENGAGEMENT LIKE '%" + SRCH_BTN.Text.Trim() + "%'";
+                    break;
+                case "Chantier":
+                    cmd_string_type_search = "Select id,NOM,PNOM,DATE_N,ENGAGEMENT,CHANTIER,DUREE,ENTREE,SORTIE FROM T_1  WHERE CHANTIER LIKE '%" + SRCH_BTN.Text.Trim() + "%'";
+                    break;
+
+            }
+            return cmd_string_type_search;
+        }
         private void MetroButton1_Click(object sender, EventArgs e)
         {
 
-            //OleDbDataAdapter da = new OleDbDataAdapter();
-            getdata_BEST();
-            SRCH_BTN.Focus();
-            SRCH_BTN.SelectAll();
-            //dtgv1.AutoResizeColumns();
-            //dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
 
 
 
         }
+        public void open_frm_popup(EventArgs    e)
+        {
+            Form formbk = new Form();
+            frm_SEARCH frmsh = new frm_SEARCH();
+            try
+            {
+                using (T2 uu = new T2())
+                {
+                    formbk.StartPosition = FormStartPosition.Manual;
+                    formbk.FormBorderStyle = FormBorderStyle.None;
+                    formbk.Opacity = .50d;
+                    formbk.BackColor = Color.Black;
+                    formbk.Size = this.Size;
+                    formbk.TopMost = true;
+                    formbk.Location = this.Location;
+                    formbk.ShowInTaskbar = false;
+                    formbk.Show();
+                    uu.Owner = formbk;
+                    uu.ShowDialog();
+                    formbk.Dispose();
 
 
-           
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formbk.Dispose();
+            }
+        }
+
+        private void Dgv1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            open_frm_popup(e);
+        }
+
+        private void Dgv1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
+            {
+
+                vS1.Value = e.NewValue;
+
+
+            }
+        }
+
+        private void Dgv1_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgv1.SelectedRows)
+            {
+                string value1 = row.Cells[0].Value.ToString();
+                string value2 = row.Cells[1].Value.ToString();
+                label3.Text = value1;
+                Save_Class.Instance.SC_id_employer = int.Parse(row.Cells[0].Value.ToString());
+                //...
+            }
+        }
+
+        private void VS1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (e.NewValue > -1 && e.NewValue < dgv1.Rows.Count)
+            {
+                dgv1.FirstDisplayedScrollingRowIndex = e.NewValue;
+            }
+        }
+        public void REFRESH_SCROLLBAR()
+        {
+
+            //bunifuLabel6.Text = b2unifuDataGridView1.RowCount.ToString();
+            vS1.Value = 0;
+            vS1.Update();
+            vS1.Maximum = dgv1.Rows.Count;
+            vS1.Update();
+            //bunifuLabel1.Text = b2unifuDataGridView1.Rows.Count.ToString();
+        }
+
+        private void Guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+
+            //OleDbDataAdapter da = new OleDbDataAdapter();
+
+            getdata_BEST();
+
+            SRCH_BTN.Focus();
+            SRCH_BTN.SelectAll();
+            //dtgv1.AutoResizeColumns();
+            //dgv1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+
     }
 }
