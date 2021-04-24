@@ -308,7 +308,7 @@ namespace ATLASSPA
             frm_SEARCH frmsh = new frm_SEARCH();
             try
             {
-                using (T2 uu = new T2())
+                using (AT2 uu = new AT2())
                 {
                     formbk.StartPosition = FormStartPosition.Manual;
                     formbk.FormBorderStyle = FormBorderStyle.None;

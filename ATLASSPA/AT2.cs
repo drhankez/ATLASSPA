@@ -5,16 +5,16 @@ using System.Windows.Forms;
 
 namespace ATLASSPA
 {
-    public partial class T2 : Form
+    public partial class AT2 : Form
     {
-        static T2 _obj;
-        public static T2 Instance
+        static AT2 _obj;
+        public static AT2 Instance
         {
             get
             {
                 if (_obj == null)
                 {
-                    _obj = new T2();
+                    _obj = new AT2();
                 }
                 return _obj;
             }
@@ -30,7 +30,7 @@ namespace ATLASSPA
              get { return pnlNOT_employee; }
              set { pnlNOT_employee = value; }
          }*/
-        public T2()
+        public AT2()
         {
             InitializeComponent();
 
@@ -75,8 +75,8 @@ namespace ATLASSPA
             }
             label20.Text = Save_Class.Instance.SC_EMAIL__employer;
             label1.Text = Save_Class.Instance.SC_TELEPH_employer;
-            label3.Text = Save_Class.Instance.SC_NOM_employer;
-            label4.Text = Save_Class.Instance.SC_PNOM_employer;
+            label3.Text = Save_Class.Instance.SC_PNOM_employer + " " + Save_Class.Instance.SC_NOM_employer;
+            //label4.Text = 
             label2.Text = Save_Class.Instance.SC_GENDER_employer;
 
 
@@ -88,10 +88,11 @@ namespace ATLASSPA
             //bunifuTransition1.ShowSync(panel3);
             //gtran1.WaitAllAnimations();
             //PnlContainer_employee.Controls.Clear();
+            UC_P2 un = new UC_P2();
             gtran1.HideSync(PnlContainer_employee);
             _obj = this;
             PnlContainer_employee.Controls.Clear();
-            UC_P2 un = new UC_P2();
+           
             un.Dock = DockStyle.Fill;
             PnlContainer_employee.Controls.Add(un);
             timer100.Enabled = true;
@@ -110,7 +111,19 @@ namespace ATLASSPA
 
         private void BunifuButton3_Click(object sender, EventArgs e)
         {
+            UC_P3 un = new UC_P3();
+            gtran1.HideSync(PnlContainer_employee);
+            _obj = this;
+            PnlContainer_employee.Controls.Clear();
 
+            un.Dock = DockStyle.Fill;
+            PnlContainer_employee.Controls.Add(un);
+            timer100.Enabled = true;
+        }
+
+        private void BunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
